@@ -33,7 +33,7 @@ function yScale(sourceData, chosenYAxis) {
     .domain([d3.min(sourceData, d => d[chosenYAxis]) * 0.8,
       d3.max(sourceData, d => d[chosenYAxis]) * 1.2
     ])
-    .range([0, width]);
+    .range([height, 0]);
 
   return yLinearScale;
 
@@ -77,7 +77,7 @@ function updateToolTip(chosenYAxis, circlesGroup) {
     .attr("class", "tooltip")
     .offset([80, -60])
     .html(function(d) {
-      return (`${d.Current_Franchise}<br>${label} ${d[chosenYAxis]}`);
+      return (`${d.Name}<br>${label} ${d[chosenYAxis]}`);
     });
 
   circlesGroup.call(toolTip);
@@ -109,21 +109,22 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
   // Create x scale function
   var xLinearScale = d3.scaleLinear()
     .domain([d3.min(sourceData, d => d.Year), d3.max(sourceData, d => d.Year)])
-    .range([height, 0]);
+    .range([0, width]);
 
   // Create initial axis functions
   var bottomAxis = d3.axisBottom(xLinearScale);
   var leftAxis = d3.axisLeft(yLinearScale);
 
   // append x axis
-  var yAxis = chartGroup.append("g")
-    .classed("y-axis", true)
+  chartGroup.append("g")
     .attr("transform", `translate(0, ${height})`)
-    .call(leftAxis);
+    .call(bottomAxis);
 
   // append x axis
-  chartGroup.append("g")
-    .call(bottomAxis);
+  var yAxis = chartGroup.append("g")
+    .classed("y-axis", true)
+    .call(leftAxis);
+    
 
   // append initial circles
   var circlesGroup = chartGroup.selectAll("circle")
@@ -140,28 +141,35 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
   var labelsGroup = chartGroup.append("g")
     .attr("transform", `translate(${width / 2}, ${height + 20})`);
 
+
   var TC_WAR = labelsGroup.append("text")
-    .attr("x", 0)
-    .attr("y", 20)
+    .attr("y", -480)
+    .attr("x", (height / 2 ))
+    .attr("dy", "1em")
+    .attr("transform", "rotate(-90)")
+    .classed("axis-text", true)
     .attr("value", "TC_Total_WAR") // value to grab for event listener
     .classed("active", true)
     .text("Team Controlled WAR");
 
+
   var Career_WAR = labelsGroup.append("text")
-    .attr("x", 0)
-    .attr("y", 40)
+    .attr("y", -460)
+    .attr("x", (height / 2))
+    .attr("dy", "1em")
+    .attr("transform", "rotate(-90)")
+    .classed("axis-text", true)
     .attr("value", "Career_Total_WAR") // value to grab for event listener
     .classed("inactive", true)
-    .text("Career WAR");
+    .text("Total Career WAR");
 
-  // append y axis
+  //append x axis
   chartGroup.append("text")
-    .attr("transform", "rotate(-90)")
-    .attr("y", 0 - margin.left)
-    .attr("x", 0 - (height / 2))
-    .attr("dy", "1em")
-    .classed("axis-text", true)
-    .text("Year");
+  .attr("x", (width / 2))
+  .attr("y", 460)
+  .attr("value", "Year")
+  .classed("axis-text", true)
+  .text("Year");
 
   // updateToolTip function above csv import
   var circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
