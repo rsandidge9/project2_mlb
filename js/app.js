@@ -43,11 +43,12 @@ function yScale(sourceData, chosenYAxis) {
 function renderAxes(newYScale, yAxis) {
   var leftAxis = d3.axisLeft(newYScale);
 
-  leftAxis.transition()
+  yAxis.transition()
     .duration(1000)
     .call(leftAxis);
 
   return yAxis;
+
 }
 
 // function used for updating circles group with a transition to
@@ -100,7 +101,7 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
   // parse data
   sourceData.forEach(function(data) {
     data.TC_Total_WAR = +data.TC_Total_WAR;
-    data.Career_Total_WAR = +data.TC_Total_WAR;
+    data.Career_Total_WAR = +data.Career_Total_WAR;
   });
 
   // yLinearScale function above csv import
@@ -139,7 +140,7 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
 
   // Create group for two x-axis labels
   var labelsGroup = chartGroup.append("g")
-    .attr("transform", `translate(${width / 2}, ${height + 20})`);
+    .attr("transform", `translate(${width/2}, ${height})`);
 
 
   var TC_WAR = labelsGroup.append("text")
@@ -147,9 +148,9 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
     .attr("x", (height / 2 ))
     .attr("dy", "1em")
     .attr("transform", "rotate(-90)")
-    .classed("axis-text", true)
     .attr("value", "TC_Total_WAR") // value to grab for event listener
     .classed("active", true)
+    .classed("axis-text", true)
     .text("Team Controlled WAR");
 
 
@@ -158,10 +159,10 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
     .attr("x", (height / 2))
     .attr("dy", "1em")
     .attr("transform", "rotate(-90)")
-    .classed("axis-text", true)
     .attr("value", "Career_Total_WAR") // value to grab for event listener
     .classed("inactive", true)
-    .text("Total Career WAR");
+    .classed("axis-text", true)
+    .text("Career WAR");
 
   //append x axis
   chartGroup.append("text")
@@ -184,7 +185,7 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
         // replaces chosenYAxis with value
         chosenYAxis = value;
 
-        // console.log(chosenYAxis)
+        //console.log(chosenYAxis);
 
         // functions here found above csv import
         // updates x scale for new data
@@ -195,13 +196,14 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
 
         // updates circles with new x values
         circlesGroup = renderCircles(circlesGroup, yLinearScale, chosenYAxis);
+        
 
         // updates tooltips with new info
         circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
 
         // changes classes to change bold text
         if (chosenYAxis === "TC_Total_WAR") {
-            TC_WAR
+          TC_WAR
             .classed("active", true)
             .classed("inactive", false);
             Career_WAR
@@ -209,7 +211,7 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
             .classed("inactive", true);
         }
         else {
-            TC_WAR
+          TC_WAR
             .classed("active", false)
             .classed("inactive", true);
             Career_WAR
