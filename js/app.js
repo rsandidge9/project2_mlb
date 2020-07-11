@@ -31,7 +31,7 @@ function yScale(sourceData, chosenYAxis) {
   // create scales
   var yLinearScale = d3.scaleLinear()
     .domain([d3.min(sourceData, d => d[chosenYAxis]) * 0.8,
-      d3.max(sourceData, d => d[chosenYAxis]) * 1.2
+    d3.max(sourceData, d => d[chosenYAxis]) * 1.2
     ])
     .range([height, 0]);
 
@@ -77,17 +77,17 @@ function updateToolTip(chosenYAxis, circlesGroup) {
   var toolTip = d3.tip()
     .attr("class", "tooltip")
     .offset([80, -60])
-    .html(function(d) {
+    .html(function (d) {
       return (`${d.Name}<br>${label} ${d[chosenYAxis]}`);
     });
 
   circlesGroup.call(toolTip);
 
-  circlesGroup.on("mouseover", function(data) {
+  circlesGroup.on("mouseover", function (data) {
     toolTip.show(data);
   })
     // onmouseout event
-    .on("mouseout", function(data, index) {
+    .on("mouseout", function (data, index) {
       toolTip.hide(data);
     });
 
@@ -95,11 +95,11 @@ function updateToolTip(chosenYAxis, circlesGroup) {
 }
 
 // Retrieve data from the CSV file and execute everything below
-d3.csv("Test_Rays.csv").then(function(sourceData, err) {
+d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
   if (err) throw err;
 
   // parse data
-  sourceData.forEach(function(data) {
+  sourceData.forEach(function (data) {
     data.TC_Total_WAR = +data.TC_Total_WAR;
     data.Career_Total_WAR = +data.Career_Total_WAR;
   });
@@ -125,27 +125,29 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
   var yAxis = chartGroup.append("g")
     .classed("y-axis", true)
     .call(leftAxis);
-    
+
 
   // append initial circles
-  var circlesGroup = chartGroup.selectAll("circle")
+  var circlesGroup = chartGroup.selectAll("rect")
     .data(sourceData)
     .enter()
-    .append("circle")
-    .attr("cx", d => xLinearScale(d.Year))
-    .attr("cy", d => yLinearScale(d[chosenYAxis]))
-    .attr("r", 20)
+    .append("rect")
+    .attr("x", d => xLinearScale(d.Year))
+    .attr("y", d => yLinearScale(d[chosenYAxis]))
+    .attr("height", yLinearScale(0)-yLinearScale(d[chosenYAxis]))
+    .attr("width",  xLinearScale.bandwidth())
+    //.attr("r", 20)
     .attr("fill", "pink")
     .attr("opacity", ".5");
 
   // Create group for two x-axis labels
   var labelsGroup = chartGroup.append("g")
-    .attr("transform", `translate(${width/2}, ${height})`);
+    .attr("transform", `translate(${width / 2}, ${height})`);
 
 
   var TC_WAR = labelsGroup.append("text")
     .attr("y", -480)
-    .attr("x", (height / 2 ))
+    .attr("x", (height / 2))
     .attr("dy", "1em")
     .attr("transform", "rotate(-90)")
     .attr("value", "TC_Total_WAR") // value to grab for event listener
@@ -166,18 +168,18 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
 
   //append x axis
   chartGroup.append("text")
-  .attr("x", (width / 2))
-  .attr("y", 460)
-  .attr("value", "Year")
-  .classed("axis-text", true)
-  .text("Year");
+    .attr("x", (width / 2))
+    .attr("y", 460)
+    .attr("value", "Year")
+    .classed("axis-text", true)
+    .text("Year");
 
   // updateToolTip function above csv import
   var circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
 
   // x axis labels event listener
   labelsGroup.selectAll("text")
-    .on("click", function() {
+    .on("click", function () {
       // get value of selection
       var value = d3.select(this).attr("value");
       if (value !== chosenYAxis) {
@@ -196,7 +198,7 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
 
         // updates circles with new x values
         circlesGroup = renderCircles(circlesGroup, yLinearScale, chosenYAxis);
-        
+
 
         // updates tooltips with new info
         circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
@@ -206,7 +208,7 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
           TC_WAR
             .classed("active", true)
             .classed("inactive", false);
-            Career_WAR
+          Career_WAR
             .classed("active", false)
             .classed("inactive", true);
         }
@@ -214,12 +216,12 @@ d3.csv("Test_Rays.csv").then(function(sourceData, err) {
           TC_WAR
             .classed("active", false)
             .classed("inactive", true);
-            Career_WAR
+          Career_WAR
             .classed("active", true)
             .classed("inactive", false);
         }
       }
     });
-}).catch(function(error) {
+}).catch(function (error) {
   console.log(error);
 });
