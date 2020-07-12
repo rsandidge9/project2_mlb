@@ -78,7 +78,7 @@ function updateToolTip(chosenYAxis, circlesGroup) {
     .attr("class", "tooltip")
     .offset([80, -60])
     .html(function (d) {
-      return (`${d.Name}<br>${label} ${d[chosenYAxis]}`);
+      return (`${d.Year + " " +d.Current_Franchise}<br>${label} ${d[chosenYAxis]}`);
     });
 
   circlesGroup.call(toolTip);
@@ -102,15 +102,17 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
   sourceData.forEach(function (data) {
     data.TC_Total_WAR = +data.TC_Total_WAR;
     data.Career_Total_WAR = +data.Career_Total_WAR;
+    data.Year = +data.Year;
   });
 
   // yLinearScale function above csv import
   var yLinearScale = yScale(sourceData, chosenYAxis);
 
   // Create x scale function
-  var xLinearScale = d3.scaleLinear()
-    .domain([d3.min(sourceData, d => d.Year), d3.max(sourceData, d => d.Year)])
-    .range([0, width]);
+  var xLinearScale = d3.scaleBand()
+    .domain(d3.range(sourceData.length))
+    .range([0, width])
+    .padding(0.1);
 
   // Create initial axis functions
   var bottomAxis = d3.axisBottom(xLinearScale);
@@ -119,6 +121,7 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
   // append x axis
   chartGroup.append("g")
     .attr("transform", `translate(0, ${height})`)
+    .call(d3.axisBottom(xLinearScale).tickFormat(i => sourceData[i].Year).tickSizeOuter(0))
     .call(bottomAxis);
 
   // append x axis
@@ -132,11 +135,10 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
     .data(sourceData)
     .enter()
     .append("rect")
-    .attr("x", d => xLinearScale(d.Year))
+    .attr("x", (d, i) => xLinearScale(i))
     .attr("y", d => yLinearScale(d[chosenYAxis]))
-    .attr("height", d => yLinearScale(-5)-yLinearScale(d[chosenYAxis]))
+    .attr("height", d => height - yLinearScale(d[chosenYAxis]))
     .attr("width",  xLinearScale.bandwidth())
-    //.attr("r", 20)
     .attr("fill", "pink")
     .attr("opacity", ".5");
 
@@ -204,19 +206,19 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
         circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
 
         // changes classes to change bold text
-        if (chosenYAxis === "TC_Total_WAR") {
-          TC_WAR
+        if (chosenYAxis === "Career_Total_WAR") {
+          Career_WAR
             .classed("active", true)
             .classed("inactive", false);
-          Career_WAR
+            TC_WAR
             .classed("active", false)
             .classed("inactive", true);
         }
         else {
-          TC_WAR
+          Career_WAR
             .classed("active", false)
             .classed("inactive", true);
-          Career_WAR
+            TC_WAR
             .classed("active", true)
             .classed("inactive", false);
         }
