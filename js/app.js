@@ -30,7 +30,7 @@ var chosenYAxis = "TC_Total_WAR";
 function yScale(sourceData, chosenYAxis) {
   // create scales
   var yLinearScale = d3.scaleLinear()
-    .domain([d3.min(sourceData, d => d[chosenYAxis]) * 0.8,
+    .domain([d3.min(sourceData, d => d[chosenYAxis]) -5,
     d3.max(sourceData, d => d[chosenYAxis]) * 1.2
     ])
     .range([height, 0]);
@@ -57,8 +57,8 @@ function renderCircles(circlesGroup, newYScale, chosenYAxis) {
 
   circlesGroup.transition()
     .duration(1000)
-    .attr("cy", d => newYScale(d[chosenYAxis]));
-
+    .attr("y", d => newYScale(d[chosenYAxis]))
+    .attr("height", d => height - newYScale(d[chosenYAxis]))
   return circlesGroup;
 }
 
@@ -121,7 +121,7 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
   // append x axis
   chartGroup.append("g")
     .attr("transform", `translate(0, ${height})`)
-    .call(d3.axisBottom(xLinearScale).tickFormat(i => sourceData[i].Year).tickSizeOuter(0))
+    .call(d3.axisBottom(xLinearScale).tickValues(i => sourceData[i].Year).tickSizeOuter(0))
     .call(bottomAxis);
 
   // append x axis
