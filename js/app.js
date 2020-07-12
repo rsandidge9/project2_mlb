@@ -134,7 +134,7 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
     .append("rect")
     .attr("x", d => xLinearScale(d.Year))
     .attr("y", d => yLinearScale(d[chosenYAxis]))
-    .attr("height", yLinearScale(0)-yLinearScale(d[chosenYAxis]))
+    .attr("height", d => yLinearScale(-5)-yLinearScale(d[chosenYAxis]))
     .attr("width",  xLinearScale.bandwidth())
     //.attr("r", 20)
     .attr("fill", "pink")
