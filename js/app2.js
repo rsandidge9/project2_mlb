@@ -1,27 +1,28 @@
 var svgWidth = 960;
 var svgHeight = 500;
 
-var margin = {
-  top: 20,
+var second_margin = {
+  top: 60,
   right: 40,
-  bottom: 80,
+  bottom: 20,
   left: 100
 };
 
-var width = svgWidth - margin.left - margin.right;
-var height = svgHeight - margin.top - margin.bottom;
+
+var width = svgWidth - second_margin.left - second_margin.right;
+var height = svgHeight - second_margin.top - second_margin.bottom;
 
 // Create an SVG wrapper, append an SVG group that will hold our chart,
 // and shift the latter by left and top margins.
 var svg = d3
-  .select(".second_chart")
+  .select("second_chart")
   .append("svg")
   .attr("width", svgWidth)
   .attr("height", svgHeight);
 
 // Append an SVG group
 var chartGroup = svg.append("g")
-  .attr("transform", `translate(${margin.left}, ${margin.top})`);
+  .attr("transform", `translate(${second_margin.left}, ${second_margin.top})`);
 
 // Initial Params
 var chosenYAxis = "TC_Total_WAR";
@@ -105,6 +106,8 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
     data.Year = +data.Year;
   });
 
+  console.log(sourceData[0].Year);
+
   // yLinearScale function above csv import
   var yLinearScale = yScale(sourceData, chosenYAxis);
 
@@ -121,7 +124,10 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
   // append x axis
   chartGroup.append("g")
     .attr("transform", `translate(0, ${height})`)
-    .call(d3.axisBottom(xLinearScale).tickValues(i => sourceData[i].Year).tickSizeOuter(0))
+    .call(d3.axisBottom(xLinearScale).tickFormat(function(i){
+     console.log(sourceData[i].Year);
+     return sourceData[i].Year
+    } ))
     .call(bottomAxis);
 
   // append x axis
@@ -139,8 +145,9 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
     .attr("y", d => yLinearScale(d[chosenYAxis]))
     .attr("height", d => height - yLinearScale(d[chosenYAxis]))
     .attr("width",  xLinearScale.bandwidth())
-    .attr("fill", "pink")
-    .attr("opacity", ".5");
+    .attr("fill", "#092C5C")
+    .classed("inactive", true)
+    //.attr("opacity", ".5");
 
   // Create group for two x-axis labels
   var labelsGroup = chartGroup.append("g")

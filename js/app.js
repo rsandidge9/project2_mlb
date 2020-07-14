@@ -105,6 +105,9 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
     data.Year = +data.Year;
   });
 
+  console.log(sourceData[0].Year);
+
+
   // yLinearScale function above csv import
   var yLinearScale = yScale(sourceData, chosenYAxis);
 
@@ -121,7 +124,10 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
   // append x axis
   chartGroup.append("g")
     .attr("transform", `translate(0, ${height})`)
-    .call(d3.axisBottom(xLinearScale).tickValues(i => sourceData[i].Year).tickSizeOuter(0))
+    .call(d3.axisBottom(xLinearScale).tickFormat(function(i){
+     //console.log(sourceData[i].Year);
+     return sourceData[i].Year
+    } ).tickSizeOuter(0))
     .call(bottomAxis);
 
   // append x axis
@@ -139,8 +145,8 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
     .attr("y", d => yLinearScale(d[chosenYAxis]))
     .attr("height", d => height - yLinearScale(d[chosenYAxis]))
     .attr("width",  xLinearScale.bandwidth())
-    .attr("fill", "pink")
-    .attr("opacity", ".5");
+    .attr("fill", "#092C5C")
+    .classed("inactive", true)
 
   // Create group for two x-axis labels
   var labelsGroup = chartGroup.append("g")
@@ -225,5 +231,57 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
       }
     });
 }).catch(function (error) {
+  console.log(error);
+});
+
+
+
+//Creating a Table
+
+d3.csv("data/Test_Rays_Players.csv").then(function (playerData) {
+
+playerData.forEach(function(data) {
+data.Rnd = +data.Rnd;
+data.OvPck = +data.OvPck;
+data.TC_Total_WAR = +data.TC_Total_WAR;
+data.Career_Total_WAR = +data.TC_Total_WAR;
+});
+
+var button = d3.select("#filter-btn");
+var form = d3.select("#form");
+var tbody = d3.select("tbody");
+
+// Give the button and form a function to run on an event
+
+button.on("click", runEnter);
+form.on("submit", runEnter);
+
+function runEnter() {
+
+    d3.event.preventDefault();
+
+    var inputElement = d3.select("#Year-Input");
+
+    var inputValue = inputElement.property("value");
+
+    var filteredData = playerData.filter(Draft_class => Draft_class.Year === inputValue);
+
+    console.log(inputValue);
+    console.log(filteredData);
+
+    tbody.html("")
+
+    filteredData.forEach(function(DraftedPlayers) { 
+
+        var row = tbody.append("tr");
+        
+        Object.entries(DraftedPlayers).forEach(function([key, value]) {
+        var cell = row.append("td");
+        cell.text(value)
+
+    })}
+)};
+
+}).catch(function(error) {
   console.log(error);
 });
