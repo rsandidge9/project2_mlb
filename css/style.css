@@ -18,47 +18,1295 @@
   opacity: 0.3;
 }
 
+/*Astros Styles*/
 
-.tooltip {
+.astros_tooltip {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 180px;
   height: 60px;
-  padding: 2px;
-  padding-top: 8px;
   font: 12px sans-serif;
-  color: white;
+  color: #EB6E1F; /*Team secondary color*/
   text-align: center;
-  background: #8FBCE6;
+  background: #002D62; /*Team primary color*/
   border: 0;
   border-radius: 10px;
 }
 
-.axis-text {
+.astros_axis-text {
   font-family: sans-serif;
   font-weight: bold;
-  fill: #092C5C;
+  fill: #002D62; /*Team primary color*/
   text-anchor: middle;
 }
 
-.active {
+.astros_active {
   font-weight: bold;
-  fill: #092C5C;
+  fill: #002D62; /*Team primary color*/
   transition: fill 0.3s ease-out;
   text-anchor: middle;
 }
 
-.inactive {
+.astros_inactive {
   font-weight: lighter;
-  fill: #092C5C;
+  fill: #002D62; /*Team primary color*/
   transition: fill 0.3s ease-out;
   text-anchor: middle;
 }
 
-.inactive:hover {
-  fill: #8FBCE6;
+.astros_inactive:hover {
+  fill: #EB6E1F; /*Team secondary color*/
   cursor: pointer;
 }
 
+/*Angels Styles*/
+
+.angels_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #BA0021; /*Team secondary color*/
+  text-align: center;
+  background: #003263; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.angels_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #003263; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.angels_active {
+  font-weight: bold;
+  fill: #003263; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.angels_inactive {
+  font-weight: lighter;
+  fill: #003263; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.angels_inactive:hover {
+  fill: #BA0021; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Athletics Styles*/
+
+.athletics_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #EFB21E; /*Team secondary color*/
+  text-align: center;
+  background: #003831; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.athletics_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #003831; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.athletics_active {
+  font-weight: bold;
+  fill: #003831; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.athletics_inactive {
+  font-weight: lighter;
+  fill: #003831; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.athletics_inactive:hover {
+  fill: #EFB21E; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Mariners Styles*/
+
+.mariners_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #005C5C; /*Team secondary color*/
+  text-align: center;
+  background: #0C2C56; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.mariners_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #0C2C56; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.mariners_active {
+  font-weight: bold;
+  fill: #0C2C56; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.mariners_inactive {
+  font-weight: lighter;
+  fill: #0C2C56; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.mariners_inactive:hover {
+  fill: #005C5C; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Rangers Styles*/
+
+.rangers_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #C0111F; /*Team secondary color*/
+  text-align: center;
+  background: #003278; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.rangers_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #003278; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.rangers_active {
+  font-weight: bold;
+  fill: #003278; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.rangers_inactive {
+  font-weight: lighter;
+  fill: #003278; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.rangers_inactive:hover {
+  fill: #C0111F; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*White Sox Styles*/
+
+.white_sox_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #C4CED4; /*Team secondary color*/
+  text-align: center;
+  background: #27251F; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.white_sox_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #27251F; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.white_sox_active {
+  font-weight: bold;
+  fill: #27251F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.white_sox_inactive {
+  font-weight: lighter;
+  fill: #27251F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.white_sox_inactive:hover {
+  fill: #C4CED4; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Indians Styles*/
+
+.indians_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #E31937; /*Team secondary color*/
+  text-align: center;
+  background: #0C2340; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.indians_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #0C2340; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.indians_active {
+  font-weight: bold;
+  fill: #0C2340; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.indians_inactive {
+  font-weight: lighter;
+  fill: #0C2340; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.indians_inactive:hover {
+  fill: #E31937; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Tigers Styles*/
+
+.tigers_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #FA4616; /*Team secondary color*/
+  text-align: center;
+  background: #0C2340; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.tigers_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #0C2340; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.tigers_active {
+  font-weight: bold;
+  fill: #0C2340; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.tigers_inactive {
+  font-weight: lighter;
+  fill: #0C2340; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.tigers_inactive:hover {
+  fill: #FA4616; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Royals Styles*/
+
+.royals_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #BD9B60; /*Team secondary color*/
+  text-align: center;
+  background: #004687; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.royals_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #004687; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.royals_active {
+  font-weight: bold;
+  fill: #004687; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.royals_inactive {
+  font-weight: lighter;
+  fill: #004687; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.royals_inactive:hover {
+  fill: #BD9B60; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Twins Styles*/
+
+.twins_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #D31145; /*Team secondary color*/
+  text-align: center;
+  background: #002B5C; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.twins_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #002B5C; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.twins_active {
+  font-weight: bold;
+  fill: #002B5C; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.twins_inactive {
+  font-weight: lighter;
+  fill: #002B5C; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.twins_inactive:hover {
+  fill: #D31145; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Orioles Styles*/
+
+.orioles_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #DF4601; /*Team secondary color*/
+  text-align: center;
+  background: #000000; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.orioles_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #000000; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.orioles_active {
+  font-weight: bold;
+  fill: #000000; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.orioles_inactive {
+  font-weight: lighter;
+  fill: #000000; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.orioles_inactive:hover {
+  fill: #DF4601; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Red Sox Styles*/
+
+.red_sox_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #BD3039; /*Team secondary color*/
+  text-align: center;
+  background: #0C2340; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.red_sox_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #0C2340; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.red_sox_active {
+  font-weight: bold;
+  fill: #0C2340; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.red_sox_inactive {
+  font-weight: lighter;
+  fill: #0C2340; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.red_sox_inactive:hover {
+  fill: #BD3039; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Yankees Styles*/
+
+.yankees_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #D3D3D3; /*Team secondary color*/
+  text-align: center;
+  background: #0C2340; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.yankees_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #0C2340; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.yankees_active {
+  font-weight: bold;
+  fill: #0C2340; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.yankees_inactive {
+  font-weight: lighter;
+  fill: #0C2340; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.yankees_inactive:hover {
+  fill: #D3D3D3; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Rays Styles*/
+
+.rays_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #8FBCE6; /*Team secondary color*/
+  text-align: center;
+  background: #092C5C; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.rays_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #092C5C; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.rays_active {
+  font-weight: bold;
+  fill: #092C5C; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.rays_inactive {
+  font-weight: lighter;
+  fill: #092C5C; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.rays_inactive:hover {
+  fill: #8FBCE6; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Blue Jays Styles*/
+
+.blue_jays_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #1D2D5C; /*Team secondary color*/
+  text-align: center;
+  background: #134A8E; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.blue_jays_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #134A8E; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.blue_jays_active {
+  font-weight: bold;
+  fill: #134A8E; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.blue_jays_inactive {
+  font-weight: lighter;
+  fill: #134A8E; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.blue_jays_inactive:hover {
+  fill: #1D2D5C; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Diamondbacks Styles*/
+
+.diamondbacks_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #E3D4AD; /*Team secondary color*/
+  text-align: center;
+  background: #A71930; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.diamondbacks_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #A71930; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.diamondbacks_active {
+  font-weight: bold;
+  fill: #A71930; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.diamondbacks_inactive {
+  font-weight: lighter;
+  fill: #A71930; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.diamondbacks_inactive:hover{
+  fill: #E3D4AD; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Rockies Styles*/
+
+.rockies_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #C4CED4; /*Team secondary color*/
+  text-align: center;
+  background: #33006F; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.rockies_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #33006F; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.rockies_active {
+  font-weight: bold;
+  fill: #33006F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.rockies_inactive {
+  font-weight: lighter;
+  fill: #33006F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.rockies_inactive:hover{
+  fill: #C4CED4; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Dodgers Styles*/
+
+.dodgers_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #A5ACAF; /*Team secondary color*/
+  text-align: center;
+  background: #005A9C; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.dodgers_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #005A9C; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.dodgers_active {
+  font-weight: bold;
+  fill: #005A9C; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.dodgers_inactive {
+  font-weight: lighter;
+  fill: #005A9C; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.dodgers_inactive:hover{
+  fill: #A5ACAF; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Padres Styles*/
+
+.padres_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #FFC425; /*Team secondary color*/
+  text-align: center;
+  background: #2F241D; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.padres_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #2F241D; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.padres_active {
+  font-weight: bold;
+  fill: #2F241D; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.padres_inactive {
+  font-weight: lighter;
+  fill: #2F241D; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.padres_inactive:hover{
+  fill: #FFC425; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Giants Styles*/
+
+.giants_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #FD5A1E; /*Team secondary color*/
+  text-align: center;
+  background: #27251F; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.giants_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #27251F; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.giants_active {
+  font-weight: bold;
+  fill: #27251F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.giants_inactive {
+  font-weight: lighter;
+  fill: #27251F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.giants_inactive:hover{
+  fill: #FD5A1E; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Cubs Styles*/
+
+.cubs_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #CC3433; /*Team secondary color*/
+  text-align: center;
+  background: #0E3386; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.cubs_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #0E3386; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.cubs_active {
+  font-weight: bold;
+  fill: #0E3386; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.cubs_inactive {
+  font-weight: lighter;
+  fill: #0E3386; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.cubs_inactive:hover{
+  fill: #CC3433; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Reds Styles*/
+
+.reds_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #000000; /*Team secondary color*/
+  text-align: center;
+  background: #C6011F; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.reds_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #C6011F; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.reds_active {
+  font-weight: bold;
+  fill: #C6011F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.reds_inactive {
+  font-weight: lighter;
+  fill: #C6011F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.reds_inactive:hover{
+  fill: #000000; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Brewers Styles*/
+
+.brewers_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #B6922E; /*Team secondary color*/
+  text-align: center;
+  background: #0A2351; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.brewers_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #0A2351; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.brewers_active {
+  font-weight: bold;
+  fill: #0A2351; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.brewers_inactive {
+  font-weight: lighter;
+  fill: #0A2351; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.brewers_inactive:hover{
+  fill: #B6922E; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Pirates Styles*/
+
+.pirates_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #FDB827; /*Team secondary color*/
+  text-align: center;
+  background: #27251F; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.pirates_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #27251F; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.pirates_active {
+  font-weight: bold;
+  fill: #27251F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.pirates_inactive {
+  font-weight: lighter;
+  fill: #27251F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.pirates_inactive:hover{
+  fill: #FDB827; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Cardinals Styles*/
+
+.cardinals_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #FEDB00; /*Team secondary color*/
+  text-align: center;
+  background: #C41E3A; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.cardinals_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #C41E3A; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.cardinals_active {
+  font-weight: bold;
+  fill: #C41E3A; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.cardinals_inactive {
+  font-weight: lighter;
+  fill: #C41E3A; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.cardinals_inactive:hover{
+  fill: #FEDB00; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Braves Styles*/
+
+.braves_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #CE1141; /*Team secondary color*/
+  text-align: center;
+  background: #13274F; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.braves_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #13274F; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.braves_active {
+  font-weight: bold;
+  fill: #13274F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.braves_inactive {
+  font-weight: lighter;
+  fill: #13274F; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.braves_inactive:hover{
+  fill: #CE1141; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Marlins Styles*/
+
+.marlins_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #000000; /*Team secondary color*/
+  text-align: center;
+  background: #00A3E0; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.marlins_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #00A3E0; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.marlins_active {
+  font-weight: bold;
+  fill: #00A3E0; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.marlins_inactive {
+  font-weight: lighter;
+  fill: #00A3E0; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.marlins_inactive:hover{
+  fill: #000000; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Mets Styles*/
+
+.mets_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #FF5910; /*Team secondary color*/
+  text-align: center;
+  background: #002D72; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.mets_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #002D72; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.mets_active {
+  font-weight: bold;
+  fill: #002D72; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.mets_inactive {
+  font-weight: lighter;
+  fill: #002D72; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.mets_inactive:hover{
+  fill: #FF5910; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Phillies Styles*/
+
+.phillies_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #E81828; /*Team secondary color*/
+  text-align: center;
+  background: #002D72; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.phillies_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #002D72; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.phillies_active {
+  font-weight: bold;
+  fill: #002D72; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.phillies_inactive {
+  font-weight: lighter;
+  fill: #002D72; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.phillies_inactive:hover{
+  fill: #E81828; /*Team secondary color*/
+  cursor: pointer;
+}
+
+/*Nationals Styles*/
+
+.nationals_tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font: 12px sans-serif;
+  color: #14225A; /*Team secondary color*/
+  text-align: center;
+  background: #AB0003; /*Team primary color*/
+  border: 0;
+  border-radius: 10px;
+}
+
+.nationals_axis-text {
+  font-family: sans-serif;
+  font-weight: bold;
+  fill: #AB0003; /*Team primary color*/
+  text-anchor: middle;
+}
+
+.nationals_active {
+  font-weight: bold;
+  fill: #AB0003; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.nationals_inactive {
+  font-weight: lighter;
+  fill: #AB0003; /*Team primary color*/
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+}
+
+.nationals_inactive:hover{
+  fill: #14225A; /*Team secondary color*/
+  cursor: pointer;
+}
 
 #table-area th {
   text-align: center;

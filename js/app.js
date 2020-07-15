@@ -75,7 +75,7 @@ function updateToolTip(chosenYAxis, circlesGroup) {
   }
 
   var toolTip = d3.tip()
-    .attr("class", "tooltip")
+    .attr("class", "rays_tooltip")
     .offset([80, -60])
     .html(function (d) {
       return (`${d.Year + " " +d.Current_Franchise}<br>${label} ${d[chosenYAxis]}`);
@@ -106,8 +106,8 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
 
   // parse data
   FranchiseTeamData.forEach(function (data) {
-    data.TC_Total_WAR = +data.TC_Total_WAR;
-    data.Career_Total_WAR = +data.Career_Total_WAR;
+    data.TC_Total_WAR = Math.round(+data.TC_Total_WAR * 10) / 10;
+    data.Career_Total_WAR = Math.round(+data.Career_Total_WAR * 10) / 10;
     data.Year = +data.Year;
   });
 
@@ -152,8 +152,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("y", d => yLinearScale(d[chosenYAxis]))
     .attr("height", d => height - yLinearScale(d[chosenYAxis]))
     .attr("width",  xLinearScale.bandwidth())
-    .attr("fill", "#092C5C")
-    .classed("inactive", true)
+    .classed("rays_inactive", true)
 
   // Create group for two x-axis labels
   var labelsGroup = chartGroup.append("g")
@@ -167,7 +166,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("transform", "rotate(-90)")
     .attr("value", "TC_Total_WAR") // value to grab for event listener
     .classed("active", true)
-    .classed("axis-text", true)
+    .classed("rays_axis-text", true)
     .text("Team Controlled WAR");
 
 
@@ -177,8 +176,8 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("dy", "1em")
     .attr("transform", "rotate(-90)")
     .attr("value", "Career_Total_WAR") // value to grab for event listener
-    .classed("inactive", true)
-    .classed("axis-text", true)
+    .classed("rays_inactive", true)
+    .classed("rays_axis-text", true)
     .text("Career WAR");
 
   //append x axis
@@ -186,7 +185,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("x", (width / 2))
     .attr("y", 460)
     .attr("value", "Year")
-    .classed("axis-text", true)
+    .classed("rays_axis-text", true)
     .text("Year");
 
   // updateToolTip function above csv import
@@ -221,19 +220,19 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
         // changes classes to change bold text
         if (chosenYAxis === "Career_Total_WAR") {
           Career_WAR
-            .classed("active", true)
-            .classed("inactive", false);
+            .classed("rays_active", true)
+            .classed("rays_inactive", false);
             TC_WAR
-            .classed("active", false)
-            .classed("inactive", true);
+            .classed("rays_active", false)
+            .classed("rays_inactive", true);
         }
         else {
           Career_WAR
-            .classed("active", false)
-            .classed("inactive", true);
+            .classed("rays_active", false)
+            .classed("rays_inactive", true);
             TC_WAR
-            .classed("active", true)
-            .classed("inactive", false);
+            .classed("rays_active", true)
+            .classed("rays_inactive", false);
         }
       }
     });
@@ -259,8 +258,8 @@ console.log(FranchisePlayerData);
 FranchisePlayerData.forEach(function(data) {
 data.Rnd = +data.Rnd;
 data.OvPck = +data.OvPck;
-data.TC_Total_WAR = +data.TC_Total_WAR;
-data.Career_Total_WAR = +data.TC_Total_WAR;
+data.TC_Total_WAR = Math.round(+data.TC_Total_WAR * 10) / 10;
+data.Career_Total_WAR = Math.round(+data.Career_Total_WAR * 10) / 10;
 });
 
 var button = d3.select("#filter-btn");
