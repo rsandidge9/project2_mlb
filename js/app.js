@@ -27,11 +27,11 @@ var chartGroup = svg.append("g")
 var chosenYAxis = "TC_Total_WAR";
 
 // function used for updating x-scale var upon click on axis label
-function yScale(sourceData, chosenYAxis) {
+function yScale(teamData, chosenYAxis) {
   // create scales
   var yLinearScale = d3.scaleLinear()
-    .domain([d3.min(sourceData, d => d[chosenYAxis]) -5,
-    d3.max(sourceData, d => d[chosenYAxis]) * 1.2
+    .domain([d3.min(teamData, d => d[chosenYAxis]) -5,
+    d3.max(teamData, d => d[chosenYAxis]) * 1.2
     ])
     .range([height, 0]);
 
@@ -95,25 +95,32 @@ function updateToolTip(chosenYAxis, circlesGroup) {
 }
 
 // Retrieve data from the CSV file and execute everything below
-d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
+d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, err) {
   if (err) throw err;
 
+  var FranchiseTeamData = teamData.filter(function(d) { 
+    if( d["Current_Franchise"] == "Tampa Bay Rays"){ 
+          return d;
+        } 
+      })
+
   // parse data
-  sourceData.forEach(function (data) {
+  FranchiseTeamData.forEach(function (data) {
     data.TC_Total_WAR = +data.TC_Total_WAR;
     data.Career_Total_WAR = +data.Career_Total_WAR;
     data.Year = +data.Year;
   });
 
-  console.log(sourceData[0].Year);
+  console.log(teamData);
+  console.log(FranchiseTeamData);
 
 
   // yLinearScale function above csv import
-  var yLinearScale = yScale(sourceData, chosenYAxis);
+  var yLinearScale = yScale(FranchiseTeamData, chosenYAxis);
 
   // Create x scale function
   var xLinearScale = d3.scaleBand()
-    .domain(d3.range(sourceData.length))
+    .domain(d3.range(FranchiseTeamData.length))
     .range([0, width])
     .padding(0.1);
 
@@ -125,8 +132,8 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
   chartGroup.append("g")
     .attr("transform", `translate(0, ${height})`)
     .call(d3.axisBottom(xLinearScale).tickFormat(function(i){
-     //console.log(sourceData[i].Year);
-     return sourceData[i].Year
+     //console.log(FranchiseTeamData[i].Year);
+     return FranchiseTeamData[i].Year
     } ).tickSizeOuter(0))
     .call(bottomAxis);
 
@@ -138,7 +145,7 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
 
   // append initial circles
   var circlesGroup = chartGroup.selectAll("rect")
-    .data(sourceData)
+    .data(FranchiseTeamData)
     .enter()
     .append("rect")
     .attr("x", (d, i) => xLinearScale(i))
@@ -199,7 +206,7 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
 
         // functions here found above csv import
         // updates x scale for new data
-        yLinearScale = yScale(sourceData, chosenYAxis);
+        yLinearScale = yScale(FranchiseTeamData, chosenYAxis);
 
         // updates x axis with transition
         yAxis = renderAxes(yLinearScale, yAxis);
@@ -238,9 +245,18 @@ d3.csv("data/Test_Rays.csv").then(function (sourceData, err) {
 
 //Creating a Table
 
-d3.csv("data/Test_Rays_Players.csv").then(function (playerData) {
+d3.csv("data/Draft_SD_CSV.csv").then(function (playerData) {
 
-playerData.forEach(function(data) {
+  var FranchisePlayerData = playerData.filter(function(d) { 
+    if( d["Current_Franchise"] == "Tampa Bay Rays"){ 
+          return d;
+        } 
+      })
+
+console.log(playerData);
+console.log(FranchisePlayerData);
+
+FranchisePlayerData.forEach(function(data) {
 data.Rnd = +data.Rnd;
 data.OvPck = +data.OvPck;
 data.TC_Total_WAR = +data.TC_Total_WAR;
@@ -264,7 +280,7 @@ function runEnter() {
 
     var inputValue = inputElement.property("value");
 
-    var filteredData = playerData.filter(Draft_class => Draft_class.Year === inputValue);
+    var filteredData = FranchisePlayerData.filter(Draft_class => Draft_class.Year === inputValue);
 
     console.log(inputValue);
     console.log(filteredData);
