@@ -1,4 +1,4 @@
-var svgWidth = 960;
+var svgWidth = 860;
 var svgHeight = 500;
 
 var margin = {
@@ -14,7 +14,7 @@ var height = svgHeight - margin.top - margin.bottom;
 // Create an SVG wrapper, append an SVG group that will hold our chart,
 // and shift the latter by left and top margins.
 var svg = d3
-  .select(".chart")
+  .select(".astros_chart")
   .append("svg")
   .attr("width", svgWidth)
   .attr("height", svgHeight);
@@ -30,7 +30,7 @@ var chosenYAxis = "TC_Total_WAR";
 function yScale(teamData, chosenYAxis) {
   // create scales
   var yLinearScale = d3.scaleLinear()
-    .domain([d3.min(teamData, d => d[chosenYAxis]) -5,
+    .domain([d3.min(teamData, d => d[chosenYAxis]) - 5,
     d3.max(teamData, d => d[chosenYAxis]) * 1.2
     ])
     .range([height, 0]);
@@ -78,7 +78,7 @@ function updateToolTip(chosenYAxis, circlesGroup) {
     .attr("class", "rays_tooltip")
     .offset([80, -60])
     .html(function (d) {
-      return (`${d.Year + " " +d.Current_Franchise}<br>${label} ${d[chosenYAxis]}`);
+      return (`${d.Year + " " + d.Current_Franchise}<br>${label} ${d[chosenYAxis]}`);
     });
 
   circlesGroup.call(toolTip);
@@ -98,11 +98,11 @@ function updateToolTip(chosenYAxis, circlesGroup) {
 d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, err) {
   if (err) throw err;
 
-  var FranchiseTeamData = teamData.filter(function(d) { 
-    if( d["Current_Franchise"] == "Tampa Bay Rays"){ 
-          return d;
-        } 
-      })
+  var FranchiseTeamData = teamData.filter(function (d) {
+    if (d["Current_Franchise"] == "Tampa Bay Rays") {
+      return d;
+    }
+  })
 
   // parse data
   FranchiseTeamData.forEach(function (data) {
@@ -131,10 +131,10 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
   // append x axis
   chartGroup.append("g")
     .attr("transform", `translate(0, ${height})`)
-    .call(d3.axisBottom(xLinearScale).tickFormat(function(i){
-     //console.log(FranchiseTeamData[i].Year);
-     return FranchiseTeamData[i].Year
-    } ).tickSizeOuter(0))
+    .call(d3.axisBottom(xLinearScale).tickFormat(function (i) {
+      //console.log(FranchiseTeamData[i].Year);
+      return FranchiseTeamData[i].Year
+    }).tickSizeOuter(0))
     .call(bottomAxis);
 
   // append x axis
@@ -151,7 +151,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("x", (d, i) => xLinearScale(i))
     .attr("y", d => yLinearScale(d[chosenYAxis]))
     .attr("height", d => height - yLinearScale(d[chosenYAxis]))
-    .attr("width",  xLinearScale.bandwidth())
+    .attr("width", xLinearScale.bandwidth())
     .classed("rays_inactive", true)
 
   // Create group for two x-axis labels
@@ -222,7 +222,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
           Career_WAR
             .classed("rays_active", true)
             .classed("rays_inactive", false);
-            TC_WAR
+          TC_WAR
             .classed("rays_active", false)
             .classed("rays_inactive", true);
         }
@@ -230,7 +230,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
           Career_WAR
             .classed("rays_active", false)
             .classed("rays_inactive", true);
-            TC_WAR
+          TC_WAR
             .classed("rays_active", true)
             .classed("rays_inactive", false);
         }
@@ -246,32 +246,32 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
 
 d3.csv("data/Draft_SD_CSV.csv").then(function (playerData) {
 
-  var FranchisePlayerData = playerData.filter(function(d) { 
-    if( d["Current_Franchise"] == "Tampa Bay Rays"){ 
-          return d;
-        } 
-      })
+  var FranchisePlayerData = playerData.filter(function (d) {
+    if (d["Current_Franchise"] == "Tampa Bay Rays") {
+      return d;
+    }
+  })
 
-console.log(playerData);
-console.log(FranchisePlayerData);
+  console.log(playerData);
+  console.log(FranchisePlayerData);
 
-FranchisePlayerData.forEach(function(data) {
-data.Rnd = +data.Rnd;
-data.OvPck = +data.OvPck;
-data.TC_Total_WAR = Math.round(+data.TC_Total_WAR * 10) / 10;
-data.Career_Total_WAR = Math.round(+data.Career_Total_WAR * 10) / 10;
-});
+  FranchisePlayerData.forEach(function (data) {
+    data.Rnd = +data.Rnd;
+    data.OvPck = +data.OvPck;
+    data.TC_Total_WAR = Math.round(+data.TC_Total_WAR * 10) / 10;
+    data.Career_Total_WAR = Math.round(+data.Career_Total_WAR * 10) / 10;
+  });
 
-var button = d3.select("#filter-btn");
-var form = d3.select("#form");
-var tbody = d3.select("tbody");
+  var button = d3.select("#filter-btn");
+  var form = d3.select("#form");
+  var tbody = d3.select("tbody");
 
-// Give the button and form a function to run on an event
+  // Give the button and form a function to run on an event
 
-button.on("click", runEnter);
-form.on("submit", runEnter);
+  button.on("click", runEnter);
+  form.on("submit", runEnter);
 
-function runEnter() {
+  function runEnter() {
 
     d3.event.preventDefault();
 
@@ -286,17 +286,19 @@ function runEnter() {
 
     tbody.html("")
 
-    filteredData.forEach(function(DraftedPlayers) { 
+    filteredData.forEach(function (DraftedPlayers) {
 
-        var row = tbody.append("tr");
-        
-        Object.entries(DraftedPlayers).forEach(function([key, value]) {
+      var row = tbody.append("tr");
+
+      Object.entries(DraftedPlayers).forEach(function ([key, value]) {
         var cell = row.append("td");
         cell.text(value)
 
-    })}
-)};
+      })
+    }
+    )
+  };
 
-}).catch(function(error) {
+}).catch(function (error) {
   console.log(error);
 });
