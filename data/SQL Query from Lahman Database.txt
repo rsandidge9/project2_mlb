@@ -1,0 +1,47 @@
+SELECT FirstTwoTables.yearID, FirstTwoTables.franchName, (FirstTwoTables.ThirdYearW + FirstTwoTables.FourthYearW + ThirdTable.W) AS WinTotal, (FirstTwoTables.ThirdYearL + FirstTwoTables.FourthYearL + ThirdTable.L) AS LossTotal, ROUND(((FirstTwoTables.ThirdYearW + FirstTwoTables.FourthYearW + ThirdTable.W) / ((FirstTwoTables.ThirdYearW + FirstTwoTables.FourthYearW + ThirdTable.W) + (FirstTwoTables.ThirdYearL + FirstTwoTables.FourthYearL + ThirdTable.L))),3) AS ThreeYearWPCT
+FROM (SELECT FirstTable.yearID, FirstTable.franchName, FirstTable.franchID, FirstTable.W AS ThirdYearW, FirstTable.L AS ThirdYearL, SecondTable.W AS FourthYearW, SecondTable.L AS FourthYearL
+FROM(
+SELECT DraftClasses.yearID, DraftClasses.franchName, DraftClasses.franchID, ThirdYear.W, ThirdYear.L
+FROM(
+SELECT Teams.yearID, TeamsFranchises.franchName, Teams.franchID
+FROM Teams
+INNER JOIN TeamsFranchises
+ON Teams.franchID = TeamsFranchises.franchID
+WHERE Teams.yearID >= 1965) AS DraftClasses
+INNER JOIN(
+SELECT Teams.yearID, TeamsFranchises.franchName, Teams.franchID, Teams.W, Teams.L
+FROM Teams
+INNER JOIN TeamsFranchises
+ON Teams.franchID = TeamsFranchises.franchID
+WHERE Teams.yearID >= 1965) AS ThirdYear
+ON (DraftClasses.franchID = ThirdYear.franchID) AND (DraftClasses.yearID = ThirdYear.yearID - 3)) AS FirstTable
+INNER JOIN(
+SELECT DraftClasses.yearID, DraftClasses.franchName, DraftClasses.franchID, FourthYear.W, FourthYear.L
+FROM(
+SELECT Teams.yearID, TeamsFranchises.franchName, Teams.franchID
+FROM Teams
+INNER JOIN TeamsFranchises
+ON Teams.franchID = TeamsFranchises.franchID
+WHERE Teams.yearID >= 1965) AS DraftClasses
+INNER JOIN(
+SELECT Teams.yearID, TeamsFranchises.franchName, Teams.franchID, Teams.W, Teams.L
+FROM Teams
+INNER JOIN TeamsFranchises
+ON Teams.franchID = TeamsFranchises.franchID
+WHERE Teams.yearID >= 1965) AS FourthYear
+ON (DraftClasses.franchID = FourthYear.franchID) AND (DraftClasses.yearID = FourthYear.yearID - 4)) AS SecondTable
+ON (FirstTable.franchID = SecondTable.franchID) AND (FirstTable.yearID = SecondTable.yearID))  AS FirstTwoTables INNER JOIN (SELECT DraftClasses.yearID, DraftClasses.franchName, DraftClasses.franchID, FifthYear.W, FifthYear.L
+FROM(
+SELECT Teams.yearID, TeamsFranchises.franchName, Teams.franchID
+FROM Teams
+INNER JOIN TeamsFranchises
+ON Teams.franchID = TeamsFranchises.franchID
+WHERE Teams.yearID >= 1965) AS DraftClasses
+INNER JOIN(
+SELECT Teams.yearID, TeamsFranchises.franchName, Teams.franchID, Teams.W, Teams.L
+FROM Teams
+INNER JOIN TeamsFranchises
+ON Teams.franchID = TeamsFranchises.franchID
+WHERE Teams.yearID >= 1965) AS FifthYear
+ON (DraftClasses.franchID = FifthYear.franchID) AND (DraftClasses.yearID = FifthYear.yearID - 5))  AS ThirdTable ON (FirstTwoTables.yearID = ThirdTable.yearID) AND (FirstTwoTables.franchID = ThirdTable.franchID)
+ORDER BY ROUND(((FirstTwoTables.ThirdYearW + FirstTwoTables.FourthYearW + ThirdTable.W) / ((FirstTwoTables.ThirdYearW + FirstTwoTables.FourthYearW + ThirdTable.W) + (FirstTwoTables.ThirdYearL + FirstTwoTables.FourthYearL + ThirdTable.L))),3) DESC;

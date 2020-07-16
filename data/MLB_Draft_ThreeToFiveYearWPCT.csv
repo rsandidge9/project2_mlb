@@ -1,0 +1,1339 @@
+yearID,franchName,WinTotal,LossTotal,ThreeYearWPCT
+1998,Arizona Diamondbacks,274,212,0.564
+1999,Arizona Diamondbacks,233,253,0.479
+2000,Arizona Diamondbacks,212,274,0.436
+2001,Arizona Diamondbacks,204,282,0.42
+2002,Arizona Diamondbacks,243,243,0.5
+2003,Arizona Diamondbacks,248,238,0.51
+2004,Arizona Diamondbacks,242,244,0.498
+2005,Arizona Diamondbacks,217,269,0.447
+2006,Arizona Diamondbacks,229,257,0.471
+2007,Arizona Diamondbacks,240,246,0.494
+2008,Arizona Diamondbacks,256,230,0.527
+2009,Arizona Diamondbacks,226,260,0.465
+2010,Arizona Diamondbacks,224,262,0.461
+2011,Arizona Diamondbacks,212,274,0.436
+2012,Arizona Diamondbacks,241,245,0.496
+2013,Arizona Diamondbacks,244,242,0.502
+2014,Arizona Diamondbacks,260,226,0.535
+1965,Atlanta Braves,250,236,0.514
+1966,Atlanta Braves,251,235,0.516
+1967,Atlanta Braves,228,250,0.477
+1968,Atlanta Braves,228,249,0.478
+1969,Atlanta Braves,234,243,0.491
+1970,Atlanta Braves,231,253,0.477
+1971,Atlanta Braves,225,260,0.464
+1972,Atlanta Braves,198,287,0.408
+1973,Atlanta Braves,200,286,0.412
+1974,Atlanta Braves,196,288,0.405
+1975,Atlanta Braves,216,267,0.447
+1976,Atlanta Braves,197,230,0.461
+1977,Atlanta Braves,220,209,0.513
+1978,Atlanta Braves,227,203,0.528
+1979,Atlanta Braves,257,229,0.529
+1980,Atlanta Braves,234,252,0.481
+1981,Atlanta Braves,218,267,0.449
+1982,Atlanta Braves,207,277,0.428
+1983,Atlanta Braves,195,287,0.405
+1984,Atlanta Braves,186,295,0.387
+1985,Atlanta Braves,182,300,0.378
+1986,Atlanta Braves,222,262,0.459
+1987,Atlanta Braves,257,229,0.529
+1988,Atlanta Braves,296,190,0.609
+1989,Atlanta Braves,270,168,0.616
+1990,Atlanta Braves,262,158,0.624
+1991,Atlanta Braves,254,166,0.605
+1992,Atlanta Braves,287,181,0.613
+1993,Atlanta Braves,303,183,0.623
+1994,Atlanta Braves,310,176,0.638
+1995,Atlanta Braves,304,182,0.626
+1996,Atlanta Braves,286,200,0.588
+1997,Atlanta Braves,284,200,0.587
+1998,Atlanta Braves,290,194,0.599
+1999,Atlanta Braves,298,186,0.616
+2000,Atlanta Braves,287,199,0.591
+2001,Atlanta Braves,265,221,0.545
+2002,Atlanta Braves,253,233,0.521
+2003,Atlanta Braves,235,251,0.484
+2004,Atlanta Braves,242,244,0.498
+2005,Atlanta Braves,249,237,0.512
+2006,Atlanta Braves,266,220,0.547
+2007,Atlanta Braves,274,212,0.564
+2008,Atlanta Braves,279,207,0.574
+2009,Atlanta Braves,269,217,0.553
+2010,Atlanta Braves,242,244,0.498
+2011,Atlanta Braves,214,271,0.441
+2012,Atlanta Braves,207,278,0.427
+2013,Atlanta Braves,230,255,0.474
+2014,Atlanta Braves,259,227,0.533
+1965,Baltimore Orioles,308,178,0.634
+1966,Baltimore Orioles,318,164,0.66
+1967,Baltimore Orioles,289,185,0.61
+1968,Baltimore Orioles,278,196,0.586
+1969,Baltimore Orioles,268,210,0.561
+1970,Baltimore Orioles,278,205,0.576
+1971,Baltimore Orioles,269,214,0.557
+1972,Baltimore Orioles,275,207,0.571
+1973,Baltimore Orioles,275,209,0.568
+1974,Baltimore Orioles,289,192,0.601
+1975,Baltimore Orioles,292,190,0.606
+1976,Baltimore Orioles,261,165,0.613
+1977,Baltimore Orioles,253,176,0.59
+1978,Baltimore Orioles,251,178,0.585
+1979,Baltimore Orioles,277,209,0.57
+1980,Baltimore Orioles,266,219,0.548
+1981,Baltimore Orioles,241,244,0.497
+1982,Baltimore Orioles,223,262,0.46
+1983,Baltimore Orioles,194,291,0.4
+1984,Baltimore Orioles,208,277,0.429
+1985,Baltimore Orioles,217,267,0.448
+1986,Baltimore Orioles,230,255,0.474
+1987,Baltimore Orioles,232,253,0.478
+1988,Baltimore Orioles,241,245,0.496
+1989,Baltimore Orioles,237,199,0.544
+1990,Baltimore Orioles,219,199,0.524
+1991,Baltimore Orioles,222,196,0.531
+1992,Baltimore Orioles,257,211,0.549
+1993,Baltimore Orioles,265,221,0.545
+1994,Baltimore Orioles,255,231,0.525
+1995,Baltimore Orioles,231,255,0.475
+1996,Baltimore Orioles,215,270,0.443
+1997,Baltimore Orioles,204,281,0.421
+1998,Baltimore Orioles,201,284,0.414
+1999,Baltimore Orioles,216,270,0.444
+2000,Baltimore Orioles,223,263,0.459
+2001,Baltimore Orioles,222,264,0.457
+2002,Baltimore Orioles,213,273,0.438
+2003,Baltimore Orioles,207,278,0.427
+2004,Baltimore Orioles,201,284,0.414
+2005,Baltimore Orioles,198,287,0.408
+2006,Baltimore Orioles,199,287,0.409
+2007,Baltimore Orioles,228,258,0.469
+2008,Baltimore Orioles,247,239,0.508
+2009,Baltimore Orioles,274,212,0.564
+2010,Baltimore Orioles,262,224,0.539
+2011,Baltimore Orioles,266,220,0.547
+2012,Baltimore Orioles,245,241,0.504
+2013,Baltimore Orioles,211,275,0.434
+2014,Baltimore Orioles,176,310,0.362
+1965,Boston Red Sox,260,226,0.535
+1966,Boston Red Sox,259,227,0.533
+1967,Boston Red Sox,257,222,0.537
+1968,Boston Red Sox,259,220,0.541
+1969,Boston Red Sox,258,221,0.539
+1970,Boston Red Sox,268,216,0.554
+1971,Boston Red Sox,262,222,0.541
+1972,Boston Red Sox,275,208,0.569
+1973,Boston Red Sox,279,207,0.574
+1974,Boston Red Sox,287,197,0.593
+1975,Boston Red Sox,273,210,0.565
+1976,Boston Red Sox,233,195,0.544
+1977,Boston Red Sox,231,199,0.537
+1978,Boston Red Sox,226,206,0.523
+1979,Boston Red Sox,253,233,0.521
+1980,Boston Red Sox,245,241,0.504
+1981,Boston Red Sox,262,223,0.54
+1982,Boston Red Sox,254,231,0.524
+1983,Boston Red Sox,262,223,0.54
+1984,Boston Red Sox,250,236,0.514
+1985,Boston Red Sox,260,226,0.535
+1986,Boston Red Sox,255,231,0.525
+1987,Boston Red Sox,245,241,0.504
+1988,Boston Red Sox,237,249,0.488
+1989,Boston Red Sox,207,232,0.472
+1990,Boston Red Sox,220,201,0.523
+1991,Boston Red Sox,225,196,0.534
+1992,Boston Red Sox,249,219,0.532
+1993,Boston Red Sox,255,231,0.525
+1994,Boston Red Sox,264,222,0.543
+1995,Boston Red Sox,271,215,0.558
+1996,Boston Red Sox,261,224,0.538
+1997,Boston Red Sox,260,225,0.536
+1998,Boston Red Sox,270,215,0.557
+1999,Boston Red Sox,286,200,0.588
+2000,Boston Red Sox,288,198,0.593
+2001,Boston Red Sox,279,207,0.574
+2002,Boston Red Sox,277,209,0.57
+2003,Boston Red Sox,277,209,0.57
+2004,Boston Red Sox,286,200,0.588
+2005,Boston Red Sox,279,207,0.574
+2006,Boston Red Sox,274,212,0.564
+2007,Boston Red Sox,248,238,0.51
+2008,Boston Red Sox,256,230,0.527
+2009,Boston Red Sox,237,249,0.488
+2010,Boston Red Sox,246,240,0.506
+2011,Boston Red Sox,242,244,0.498
+2012,Boston Red Sox,264,222,0.543
+2013,Boston Red Sox,294,192,0.605
+2014,Boston Red Sox,285,201,0.586
+1965,Chicago Cubs,260,226,0.535
+1966,Chicago Cubs,259,227,0.533
+1967,Chicago Cubs,252,227,0.526
+1968,Chicago Cubs,245,233,0.513
+1969,Chicago Cubs,228,250,0.477
+1970,Chicago Cubs,218,267,0.449
+1971,Chicago Cubs,216,270,0.444
+1972,Chicago Cubs,231,255,0.475
+1973,Chicago Cubs,235,251,0.484
+1974,Chicago Cubs,240,246,0.494
+1975,Chicago Cubs,223,263,0.459
+1976,Chicago Cubs,182,245,0.426
+1977,Chicago Cubs,175,252,0.41
+1978,Chicago Cubs,182,245,0.426
+1979,Chicago Cubs,240,245,0.495
+1980,Chicago Cubs,244,240,0.504
+1981,Chicago Cubs,243,239,0.504
+1982,Chicago Cubs,223,259,0.463
+1983,Chicago Cubs,223,260,0.462
+1984,Chicago Cubs,246,239,0.507
+1985,Chicago Cubs,247,239,0.508
+1986,Chicago Cubs,247,237,0.51
+1987,Chicago Cubs,232,252,0.479
+1988,Chicago Cubs,239,245,0.494
+1989,Chicago Cubs,211,226,0.483
+1990,Chicago Cubs,206,213,0.492
+1991,Chicago Cubs,198,221,0.473
+1992,Chicago Cubs,217,251,0.464
+1993,Chicago Cubs,234,253,0.48
+1994,Chicago Cubs,225,262,0.462
+1995,Chicago Cubs,222,265,0.456
+1996,Chicago Cubs,220,266,0.453
+1997,Chicago Cubs,220,266,0.453
+1998,Chicago Cubs,243,243,0.5
+1999,Chicago Cubs,244,242,0.502
+2000,Chicago Cubs,256,230,0.527
+2001,Chicago Cubs,234,252,0.481
+2002,Chicago Cubs,230,256,0.473
+2003,Chicago Cubs,248,237,0.511
+2004,Chicago Cubs,265,219,0.548
+2005,Chicago Cubs,255,229,0.527
+2006,Chicago Cubs,229,256,0.472
+2007,Chicago Cubs,207,279,0.426
+2008,Chicago Cubs,198,288,0.407
+2009,Chicago Cubs,200,286,0.412
+2010,Chicago Cubs,236,250,0.486
+2011,Chicago Cubs,273,212,0.563
+2012,Chicago Cubs,292,193,0.602
+2013,Chicago Cubs,290,196,0.597
+2014,Chicago Cubs,271,216,0.556
+1965,Chicago White Sox,191,295,0.393
+1966,Chicago White Sox,203,283,0.418
+1967,Chicago White Sox,222,256,0.464
+1968,Chicago White Sox,243,235,0.508
+1969,Chicago White Sox,244,232,0.513
+1970,Chicago White Sox,232,251,0.48
+1971,Chicago White Sox,219,263,0.454
+1972,Chicago White Sox,229,255,0.473
+1973,Chicago White Sox,225,259,0.465
+1974,Chicago White Sox,234,249,0.484
+1975,Chicago White Sox,214,267,0.445
+1976,Chicago White Sox,197,229,0.462
+1977,Chicago White Sox,211,217,0.493
+1978,Chicago White Sox,240,190,0.558
+1979,Chicago White Sox,260,226,0.535
+1980,Chicago White Sox,258,228,0.531
+1981,Chicago White Sox,231,255,0.475
+1982,Chicago White Sox,234,252,0.481
+1983,Chicago White Sox,220,265,0.454
+1984,Chicago White Sox,217,267,0.448
+1985,Chicago White Sox,234,250,0.483
+1986,Chicago White Sox,250,235,0.515
+1987,Chicago White Sox,267,219,0.549
+1988,Chicago White Sox,267,219,0.549
+1989,Chicago White Sox,247,190,0.565
+1990,Chicago White Sox,229,190,0.547
+1991,Chicago White Sox,220,199,0.525
+1992,Chicago White Sox,233,234,0.499
+1993,Chicago White Sox,245,240,0.505
+1994,Chicago White Sox,235,249,0.486
+1995,Chicago White Sox,250,235,0.515
+1996,Chicago White Sox,253,232,0.522
+1997,Chicago White Sox,259,227,0.533
+1998,Chicago White Sox,250,236,0.514
+1999,Chicago White Sox,250,236,0.514
+2000,Chicago White Sox,268,218,0.551
+2001,Chicago White Sox,272,214,0.56
+2002,Chicago White Sox,261,225,0.537
+2003,Chicago White Sox,251,236,0.515
+2004,Chicago White Sox,240,247,0.493
+2005,Chicago White Sox,256,231,0.526
+2006,Chicago White Sox,246,240,0.506
+2007,Chicago White Sox,252,234,0.519
+2008,Chicago White Sox,227,259,0.467
+2009,Chicago White Sox,221,265,0.455
+2010,Chicago White Sox,212,274,0.436
+2011,Chicago White Sox,227,259,0.467
+2012,Chicago White Sox,221,265,0.455
+2013,Chicago White Sox,207,279,0.426
+2014,Chicago White Sox,201,284,0.414
+1965,Cincinnati Reds,274,212,0.564
+1966,Cincinnati Reds,270,216,0.556
+1967,Cincinnati Reds,276,202,0.577
+1968,Cincinnati Reds,273,205,0.571
+1969,Cincinnati Reds,292,186,0.611
+1970,Cincinnati Reds,305,181,0.628
+1971,Cincinnati Reds,308,178,0.634
+1972,Cincinnati Reds,298,188,0.613
+1973,Cincinnati Reds,282,203,0.581
+1974,Cincinnati Reds,270,214,0.558
+1975,Cincinnati Reds,271,213,0.56
+1976,Cincinnati Reds,245,186,0.568
+1977,Cincinnati Reds,216,216,0.5
+1978,Cincinnati Reds,201,231,0.465
+1979,Cincinnati Reds,205,281,0.422
+1980,Cincinnati Reds,233,252,0.48
+1981,Cincinnati Reds,245,240,0.505
+1982,Cincinnati Reds,259,226,0.534
+1983,Cincinnati Reds,257,228,0.53
+1984,Cincinnati Reds,246,239,0.507
+1985,Cincinnati Reds,253,232,0.522
+1986,Cincinnati Reds,240,246,0.494
+1987,Cincinnati Reds,255,231,0.525
+1988,Cincinnati Reds,237,249,0.488
+1989,Cincinnati Reds,229,209,0.523
+1990,Cincinnati Reds,224,196,0.533
+1991,Cincinnati Reds,232,188,0.552
+1992,Cincinnati Reds,242,226,0.517
+1993,Cincinnati Reds,234,252,0.481
+1994,Cincinnati Reds,249,238,0.511
+1995,Cincinnati Reds,258,229,0.53
+1996,Cincinnati Reds,247,240,0.507
+1997,Cincinnati Reds,229,257,0.471
+1998,Cincinnati Reds,213,273,0.438
+1999,Cincinnati Reds,223,263,0.459
+2000,Cincinnati Reds,218,268,0.449
+2001,Cincinnati Reds,229,257,0.471
+2002,Cincinnati Reds,225,261,0.463
+2003,Cincinnati Reds,226,260,0.465
+2004,Cincinnati Reds,224,262,0.461
+2005,Cincinnati Reds,243,243,0.5
+2006,Cincinnati Reds,248,238,0.51
+2007,Cincinnati Reds,267,219,0.549
+2008,Cincinnati Reds,266,220,0.547
+2009,Cincinnati Reds,263,223,0.541
+2010,Cincinnati Reds,230,256,0.473
+2011,Cincinnati Reds,208,278,0.428
+2012,Cincinnati Reds,200,286,0.412
+2013,Cincinnati Reds,203,283,0.418
+2014,Cincinnati Reds,210,276,0.432
+1965,Cleveland Indians,224,260,0.463
+1966,Cleveland Indians,198,287,0.408
+1967,Cleveland Indians,208,272,0.433
+1968,Cleveland Indians,203,277,0.423
+1969,Cleveland Indians,220,260,0.458
+1970,Cleveland Indians,227,256,0.47
+1971,Cleveland Indians,237,243,0.494
+1972,Cleveland Indians,231,248,0.482
+1973,Cleveland Indians,221,258,0.461
+1974,Cleveland Indians,221,260,0.459
+1975,Cleveland Indians,229,251,0.477
+1976,Cleveland Indians,212,212,0.5
+1977,Cleveland Indians,209,216,0.492
+1978,Cleveland Indians,200,227,0.468
+1979,Cleveland Indians,223,263,0.459
+1980,Cleveland Indians,205,281,0.422
+1981,Cleveland Indians,219,267,0.451
+1982,Cleveland Indians,205,281,0.422
+1983,Cleveland Indians,223,263,0.459
+1984,Cleveland Indians,212,274,0.436
+1985,Cleveland Indians,228,258,0.469
+1986,Cleveland Indians,207,279,0.426
+1987,Cleveland Indians,210,276,0.432
+1988,Cleveland Indians,209,277,0.43
+1989,Cleveland Indians,218,219,0.499
+1990,Cleveland Indians,242,177,0.578
+1991,Cleveland Indians,265,153,0.634
+1992,Cleveland Indians,285,181,0.612
+1993,Cleveland Indians,274,210,0.566
+1994,Cleveland Indians,272,213,0.561
+1995,Cleveland Indians,276,210,0.568
+1996,Cleveland Indians,278,208,0.572
+1997,Cleveland Indians,255,231,0.525
+1998,Cleveland Indians,233,253,0.479
+1999,Cleveland Indians,222,264,0.457
+2000,Cleveland Indians,241,245,0.496
+2001,Cleveland Indians,251,235,0.516
+2002,Cleveland Indians,267,219,0.549
+2003,Cleveland Indians,255,231,0.525
+2004,Cleveland Indians,242,244,0.498
+2005,Cleveland Indians,215,271,0.442
+2006,Cleveland Indians,214,272,0.44
+2007,Cleveland Indians,217,269,0.447
+2008,Cleveland Indians,240,246,0.494
+2009,Cleveland Indians,245,241,0.504
+2010,Cleveland Indians,258,227,0.532
+2011,Cleveland Indians,260,224,0.537
+2012,Cleveland Indians,277,207,0.572
+2013,Cleveland Indians,287,198,0.592
+2014,Cleveland Indians,286,200,0.588
+1993,Colorado Rockies,243,243,0.5
+1994,Colorado Rockies,232,254,0.477
+1995,Colorado Rockies,231,255,0.475
+1996,Colorado Rockies,227,259,0.467
+1997,Colorado Rockies,228,258,0.469
+1998,Colorado Rockies,220,266,0.453
+1999,Colorado Rockies,215,271,0.442
+2000,Colorado Rockies,209,277,0.43
+2001,Colorado Rockies,211,275,0.434
+2002,Colorado Rockies,233,254,0.478
+2003,Colorado Rockies,240,247,0.493
+2004,Colorado Rockies,256,231,0.526
+2005,Colorado Rockies,249,237,0.512
+2006,Colorado Rockies,248,238,0.51
+2007,Colorado Rockies,220,266,0.453
+2008,Colorado Rockies,211,275,0.434
+2009,Colorado Rockies,204,282,0.42
+2010,Colorado Rockies,208,278,0.428
+2011,Colorado Rockies,209,277,0.43
+2012,Colorado Rockies,230,256,0.473
+2013,Colorado Rockies,253,234,0.52
+2014,Colorado Rockies,249,238,0.511
+1965,Detroit Tigers,272,214,0.56
+1966,Detroit Tigers,260,226,0.535
+1967,Detroit Tigers,256,224,0.533
+1968,Detroit Tigers,262,218,0.546
+1969,Detroit Tigers,243,237,0.506
+1970,Detroit Tigers,214,269,0.443
+1971,Detroit Tigers,203,279,0.421
+1972,Detroit Tigers,205,277,0.425
+1973,Detroit Tigers,234,251,0.482
+1974,Detroit Tigers,245,240,0.505
+1975,Detroit Tigers,255,230,0.526
+1976,Detroit Tigers,229,203,0.53
+1977,Detroit Tigers,227,206,0.524
+1978,Detroit Tigers,235,198,0.543
+1979,Detroit Tigers,279,207,0.574
+1980,Detroit Tigers,280,205,0.577
+1981,Detroit Tigers,275,210,0.567
+1982,Detroit Tigers,269,216,0.555
+1983,Detroit Tigers,273,213,0.562
+1984,Detroit Tigers,245,241,0.504
+1985,Detroit Tigers,226,260,0.465
+1986,Detroit Tigers,222,264,0.457
+1987,Detroit Tigers,238,248,0.49
+1988,Detroit Tigers,244,242,0.502
+1989,Detroit Tigers,213,226,0.485
+1990,Detroit Tigers,198,223,0.47
+1991,Detroit Tigers,166,255,0.394
+1992,Detroit Tigers,192,276,0.41
+1993,Detroit Tigers,197,289,0.405
+1994,Detroit Tigers,213,272,0.439
+1995,Detroit Tigers,213,272,0.439
+1996,Detroit Tigers,214,271,0.441
+1997,Detroit Tigers,200,285,0.412
+1998,Detroit Tigers,164,321,0.338
+1999,Detroit Tigers,170,315,0.351
+2000,Detroit Tigers,186,300,0.383
+2001,Detroit Tigers,238,248,0.49
+2002,Detroit Tigers,254,232,0.523
+2003,Detroit Tigers,257,229,0.529
+2004,Detroit Tigers,248,239,0.509
+2005,Detroit Tigers,241,246,0.495
+2006,Detroit Tigers,262,225,0.538
+2007,Detroit Tigers,264,222,0.543
+2008,Detroit Tigers,276,210,0.568
+2009,Detroit Tigers,271,215,0.558
+2010,Detroit Tigers,257,228,0.53
+2011,Detroit Tigers,250,234,0.517
+2012,Detroit Tigers,224,260,0.463
+2013,Detroit Tigers,214,271,0.441
+2014,Detroit Tigers,175,310,0.361
+1993,Miami Marlins,226,260,0.465
+1994,Miami Marlins,210,276,0.432
+1995,Miami Marlins,197,288,0.406
+1996,Miami Marlins,219,266,0.452
+1997,Miami Marlins,234,251,0.482
+1998,Miami Marlins,246,240,0.506
+1999,Miami Marlins,253,233,0.521
+2000,Miami Marlins,257,229,0.529
+2001,Miami Marlins,244,242,0.502
+2002,Miami Marlins,232,254,0.477
+2003,Miami Marlins,233,252,0.48
+2004,Miami Marlins,242,243,0.499
+2005,Miami Marlins,251,234,0.518
+2006,Miami Marlins,239,247,0.492
+2007,Miami Marlins,221,265,0.455
+2008,Miami Marlins,203,283,0.418
+2009,Miami Marlins,208,278,0.428
+2010,Miami Marlins,210,276,0.432
+2011,Miami Marlins,227,258,0.468
+2012,Miami Marlins,227,258,0.468
+2013,Miami Marlins,219,265,0.452
+2014,Miami Marlins,197,288,0.406
+1965,Houston Astros,232,254,0.477
+1966,Houston Astros,239,247,0.492
+1967,Houston Astros,242,235,0.507
+1968,Houston Astros,245,232,0.514
+1969,Houston Astros,247,230,0.518
+1970,Houston Astros,227,258,0.468
+1971,Houston Astros,225,260,0.464
+1972,Houston Astros,225,260,0.464
+1973,Houston Astros,235,251,0.484
+1974,Houston Astros,244,242,0.502
+1975,Houston Astros,256,231,0.526
+1976,Houston Astros,243,192,0.559
+1977,Houston Astros,231,204,0.531
+1978,Houston Astros,223,211,0.514
+1979,Houston Astros,242,244,0.498
+1980,Houston Astros,248,238,0.51
+1981,Houston Astros,259,227,0.533
+1982,Houston Astros,255,231,0.525
+1983,Houston Astros,254,232,0.523
+1984,Houston Astros,244,242,0.502
+1985,Houston Astros,243,243,0.5
+1986,Houston Astros,226,260,0.465
+1987,Houston Astros,221,265,0.455
+1988,Houston Astros,231,255,0.475
+1989,Houston Astros,232,207,0.528
+1990,Houston Astros,227,194,0.539
+1991,Houston Astros,224,197,0.532
+1992,Houston Astros,242,226,0.517
+1993,Houston Astros,268,218,0.551
+1994,Houston Astros,283,203,0.582
+1995,Houston Astros,271,215,0.558
+1996,Houston Astros,262,224,0.539
+1997,Houston Astros,249,237,0.512
+1998,Houston Astros,264,222,0.543
+1999,Houston Astros,263,223,0.541
+2000,Houston Astros,268,218,0.551
+2001,Houston Astros,263,223,0.541
+2002,Houston Astros,244,242,0.502
+2003,Houston Astros,241,244,0.497
+2004,Houston Astros,233,252,0.48
+2005,Houston Astros,236,249,0.487
+2006,Houston Astros,206,280,0.424
+2007,Houston Astros,187,299,0.385
+2008,Houston Astros,162,324,0.333
+2009,Houston Astros,176,310,0.362
+2010,Houston Astros,207,279,0.426
+2011,Houston Astros,240,246,0.494
+2012,Houston Astros,271,215,0.558
+2013,Houston Astros,288,198,0.593
+2014,Houston Astros,311,175,0.64
+1969,Kansas City Royals,241,237,0.504
+1970,Kansas City Royals,256,230,0.527
+1971,Kansas City Royals,258,228,0.531
+1972,Kansas City Royals,283,203,0.582
+1973,Kansas City Royals,284,202,0.584
+1974,Kansas City Royals,279,207,0.574
+1975,Kansas City Royals,274,212,0.564
+1976,Kansas City Royals,232,195,0.543
+1977,Kansas City Royals,237,190,0.555
+1978,Kansas City Royals,219,208,0.513
+1979,Kansas City Royals,253,233,0.521
+1980,Kansas City Royals,254,232,0.523
+1981,Kansas City Royals,251,235,0.516
+1982,Kansas City Royals,250,236,0.514
+1983,Kansas City Royals,243,242,0.501
+1984,Kansas City Royals,259,226,0.534
+1985,Kansas City Royals,251,233,0.519
+1986,Kansas City Royals,249,236,0.513
+1987,Kansas City Royals,229,256,0.472
+1988,Kansas City Royals,238,248,0.49
+1989,Kansas City Royals,220,219,0.501
+1990,Kansas City Royals,218,203,0.518
+1991,Kansas City Royals,209,211,0.498
+1992,Kansas City Royals,212,254,0.455
+1993,Kansas City Royals,214,269,0.443
+1994,Kansas City Royals,203,280,0.42
+1995,Kansas City Royals,213,271,0.44
+1996,Kansas City Royals,206,279,0.425
+1997,Kansas City Royals,204,282,0.42
+1998,Kansas City Royals,210,276,0.432
+1999,Kansas City Royals,203,283,0.418
+2000,Kansas City Royals,197,289,0.405
+2001,Kansas City Royals,176,310,0.362
+2002,Kansas City Royals,187,299,0.385
+2003,Kansas City Royals,206,280,0.424
+2004,Kansas City Royals,209,277,0.43
+2005,Kansas City Royals,207,279,0.426
+2006,Kansas City Royals,203,283,0.418
+2007,Kansas City Royals,210,276,0.432
+2008,Kansas City Royals,229,257,0.471
+2009,Kansas City Royals,247,239,0.508
+2010,Kansas City Royals,270,216,0.556
+2011,Kansas City Royals,265,221,0.545
+2012,Kansas City Royals,256,230,0.527
+2013,Kansas City Royals,219,267,0.451
+2014,Kansas City Royals,197,289,0.405
+1965,Los Angeles Angels,224,262,0.461
+1966,Los Angeles Angels,233,253,0.479
+1967,Los Angeles Angels,237,242,0.495
+1968,Los Angeles Angels,230,249,0.48
+1969,Los Angeles Angels,222,257,0.463
+1970,Los Angeles Angels,219,266,0.452
+1971,Los Angeles Angels,216,269,0.445
+1972,Los Angeles Angels,222,263,0.458
+1973,Los Angeles Angels,237,249,0.488
+1974,Los Angeles Angels,249,237,0.512
+1975,Los Angeles Angels,240,244,0.496
+1976,Los Angeles Angels,204,228,0.472
+1977,Los Angeles Angels,209,223,0.484
+1978,Los Angeles Angels,214,220,0.493
+1979,Los Angeles Angels,244,242,0.502
+1980,Los Angeles Angels,241,245,0.496
+1981,Los Angeles Angels,263,223,0.541
+1982,Los Angeles Angels,257,229,0.529
+1983,Los Angeles Angels,242,244,0.498
+1984,Los Angeles Angels,241,245,0.496
+1985,Los Angeles Angels,246,240,0.506
+1986,Los Angeles Angels,252,234,0.519
+1987,Los Angeles Angels,233,253,0.479
+1988,Los Angeles Angels,224,262,0.461
+1989,Los Angeles Angels,190,249,0.433
+1990,Los Angeles Angels,196,226,0.464
+1991,Los Angeles Angels,195,226,0.463
+1992,Los Angeles Angels,232,236,0.496
+1993,Los Angeles Angels,239,246,0.493
+1994,Los Angeles Angels,239,247,0.492
+1995,Los Angeles Angels,237,249,0.488
+1996,Los Angeles Angels,227,259,0.467
+1997,Los Angeles Angels,256,230,0.527
+1998,Los Angeles Angels,251,235,0.516
+1999,Los Angeles Angels,268,218,0.551
+2000,Los Angeles Angels,264,222,0.543
+2001,Los Angeles Angels,276,210,0.568
+2002,Los Angeles Angels,278,208,0.572
+2003,Los Angeles Angels,283,203,0.582
+2004,Los Angeles Angels,291,195,0.599
+2005,Los Angeles Angels,277,209,0.57
+2006,Los Angeles Angels,263,223,0.541
+2007,Los Angeles Angels,255,231,0.525
+2008,Los Angeles Angels,253,233,0.521
+2009,Los Angeles Angels,265,221,0.545
+2010,Los Angeles Angels,261,225,0.537
+2011,Los Angeles Angels,257,229,0.529
+2012,Los Angeles Angels,239,247,0.492
+2013,Los Angeles Angels,234,252,0.481
+2014,Los Angeles Angels,232,254,0.477
+1965,Los Angeles Dodgers,248,237,0.511
+1966,Los Angeles Dodgers,261,224,0.538
+1967,Los Angeles Dodgers,261,217,0.546
+1968,Los Angeles Dodgers,269,209,0.563
+1969,Los Angeles Dodgers,282,196,0.59
+1970,Los Angeles Dodgers,285,200,0.588
+1971,Los Angeles Dodgers,282,204,0.58
+1972,Los Angeles Dodgers,278,208,0.572
+1973,Los Angeles Dodgers,285,201,0.586
+1974,Los Angeles Dodgers,272,214,0.56
+1975,Los Angeles Dodgers,266,221,0.546
+1976,Los Angeles Dodgers,234,201,0.538
+1977,Los Angeles Dodgers,243,192,0.559
+1978,Los Angeles Dodgers,242,192,0.558
+1979,Los Angeles Dodgers,258,228,0.531
+1980,Los Angeles Dodgers,265,221,0.545
+1981,Los Angeles Dodgers,247,239,0.508
+1982,Los Angeles Dodgers,241,245,0.496
+1983,Los Angeles Dodgers,240,245,0.495
+1984,Los Angeles Dodgers,244,239,0.505
+1985,Los Angeles Dodgers,257,226,0.532
+1986,Los Angeles Dodgers,256,228,0.529
+1987,Los Angeles Dodgers,242,244,0.498
+1988,Los Angeles Dodgers,237,249,0.488
+1989,Los Angeles Dodgers,202,236,0.461
+1990,Los Angeles Dodgers,217,203,0.517
+1991,Los Angeles Dodgers,226,194,0.538
+1992,Los Angeles Dodgers,256,212,0.547
+1993,Los Angeles Dodgers,261,225,0.537
+1994,Los Angeles Dodgers,248,238,0.51
+1995,Los Angeles Dodgers,246,240,0.506
+1996,Los Angeles Dodgers,249,237,0.512
+1997,Los Angeles Dodgers,264,222,0.543
+1998,Los Angeles Dodgers,263,223,0.541
+1999,Los Angeles Dodgers,270,216,0.556
+2000,Los Angeles Dodgers,249,237,0.512
+2001,Los Angeles Dodgers,252,234,0.519
+2002,Los Angeles Dodgers,241,245,0.496
+2003,Los Angeles Dodgers,254,232,0.523
+2004,Los Angeles Dodgers,261,225,0.537
+2005,Los Angeles Dodgers,259,227,0.533
+2006,Los Angeles Dodgers,257,228,0.53
+2007,Los Angeles Dodgers,248,237,0.511
+2008,Los Angeles Dodgers,260,225,0.536
+2009,Los Angeles Dodgers,272,214,0.56
+2010,Los Angeles Dodgers,278,208,0.572
+2011,Los Angeles Dodgers,277,209,0.57
+2012,Los Angeles Dodgers,287,199,0.591
+2013,Los Angeles Dodgers,287,200,0.589
+2014,Los Angeles Dodgers,302,185,0.62
+1969,Milwaukee Brewers,215,265,0.448
+1970,Milwaukee Brewers,218,268,0.449
+1971,Milwaukee Brewers,210,275,0.433
+1972,Milwaukee Brewers,201,284,0.414
+1973,Milwaukee Brewers,226,259,0.466
+1974,Milwaukee Brewers,255,230,0.526
+1975,Milwaukee Brewers,274,211,0.565
+1976,Milwaukee Brewers,243,189,0.562
+1977,Milwaukee Brewers,243,190,0.561
+1978,Milwaukee Brewers,244,189,0.564
+1979,Milwaukee Brewers,249,236,0.513
+1980,Milwaukee Brewers,225,259,0.465
+1981,Milwaukee Brewers,215,268,0.445
+1982,Milwaukee Brewers,239,245,0.494
+1983,Milwaukee Brewers,255,230,0.526
+1984,Milwaukee Brewers,259,227,0.533
+1985,Milwaukee Brewers,242,244,0.498
+1986,Milwaukee Brewers,238,248,0.49
+1987,Milwaukee Brewers,249,237,0.512
+1988,Milwaukee Brewers,244,242,0.502
+1989,Milwaukee Brewers,214,225,0.487
+1990,Milwaukee Brewers,187,234,0.444
+1991,Milwaukee Brewers,198,223,0.47
+1992,Milwaukee Brewers,223,244,0.478
+1993,Milwaukee Brewers,232,253,0.478
+1994,Milwaukee Brewers,226,258,0.467
+1995,Milwaukee Brewers,221,264,0.456
+1996,Milwaukee Brewers,215,270,0.443
+1997,Milwaukee Brewers,197,289,0.405
+1998,Milwaukee Brewers,192,294,0.395
+1999,Milwaukee Brewers,191,294,0.394
+2000,Milwaukee Brewers,216,269,0.445
+2001,Milwaukee Brewers,223,262,0.46
+2002,Milwaukee Brewers,239,247,0.492
+2003,Milwaukee Brewers,248,238,0.51
+2004,Milwaukee Brewers,253,233,0.521
+2005,Milwaukee Brewers,247,239,0.508
+2006,Milwaukee Brewers,253,233,0.521
+2007,Milwaukee Brewers,256,230,0.527
+2008,Milwaukee Brewers,253,233,0.521
+2009,Milwaukee Brewers,239,247,0.492
+2010,Milwaukee Brewers,224,262,0.461
+2011,Milwaukee Brewers,223,263,0.459
+2012,Milwaukee Brewers,227,259,0.467
+2013,Milwaukee Brewers,255,232,0.524
+2014,Milwaukee Brewers,271,216,0.556
+1965,Minnesota Twins,274,212,0.564
+1966,Minnesota Twins,269,215,0.556
+1967,Minnesota Twins,249,227,0.523
+1968,Minnesota Twins,232,244,0.487
+1969,Minnesota Twins,240,238,0.502
+1970,Minnesota Twins,239,244,0.495
+1971,Minnesota Twins,243,240,0.503
+1972,Minnesota Twins,245,237,0.508
+1973,Minnesota Twins,242,243,0.499
+1974,Minnesota Twins,239,246,0.493
+1975,Minnesota Twins,232,253,0.478
+1976,Minnesota Twins,200,232,0.463
+1977,Minnesota Twins,178,254,0.412
+1978,Minnesota Twins,171,262,0.395
+1979,Minnesota Twins,211,275,0.434
+1980,Minnesota Twins,228,258,0.469
+1981,Minnesota Twins,229,257,0.471
+1982,Minnesota Twins,233,253,0.479
+1983,Minnesota Twins,247,239,0.508
+1984,Minnesota Twins,256,230,0.527
+1985,Minnesota Twins,245,241,0.504
+1986,Minnesota Twins,249,237,0.512
+1987,Minnesota Twins,259,227,0.533
+1988,Minnesota Twins,256,230,0.527
+1989,Minnesota Twins,214,223,0.49
+1990,Minnesota Twins,180,239,0.43
+1991,Minnesota Twins,187,232,0.446
+1992,Minnesota Twins,202,266,0.432
+1993,Minnesota Twins,216,270,0.444
+1994,Minnesota Twins,201,283,0.415
+1995,Minnesota Twins,202,282,0.417
+1996,Minnesota Twins,217,267,0.448
+1997,Minnesota Twins,248,237,0.511
+1998,Minnesota Twins,269,216,0.555
+1999,Minnesota Twins,276,209,0.569
+2000,Minnesota Twins,265,221,0.545
+2001,Minnesota Twins,271,215,0.558
+2002,Minnesota Twins,258,228,0.531
+2003,Minnesota Twins,263,224,0.54
+2004,Minnesota Twins,254,234,0.52
+2005,Minnesota Twins,269,219,0.551
+2006,Minnesota Twins,244,243,0.501
+2007,Minnesota Twins,223,263,0.459
+2008,Minnesota Twins,195,291,0.401
+2009,Minnesota Twins,202,284,0.416
+2010,Minnesota Twins,219,267,0.451
+2011,Minnesota Twins,212,274,0.436
+2012,Minnesota Twins,227,259,0.467
+2013,Minnesota Twins,222,264,0.457
+2014,Minnesota Twins,264,222,0.543
+1965,New York Mets,256,230,0.527
+1966,New York Mets,266,220,0.547
+1967,New York Mets,249,231,0.519
+1968,New York Mets,248,231,0.518
+1969,New York Mets,236,243,0.493
+1970,New York Mets,235,250,0.485
+1971,New York Mets,239,247,0.492
+1972,New York Mets,232,254,0.477
+1973,New York Mets,216,270,0.444
+1974,New York Mets,193,293,0.397
+1975,New York Mets,196,290,0.403
+1976,New York Mets,171,256,0.4
+1977,New York Mets,173,254,0.405
+1978,New York Mets,174,253,0.407
+1979,New York Mets,223,263,0.459
+1980,New York Mets,256,230,0.527
+1981,New York Mets,296,190,0.609
+1982,New York Mets,298,188,0.613
+1983,New York Mets,300,184,0.62
+1984,New York Mets,279,205,0.576
+1985,New York Mets,278,206,0.574
+1986,New York Mets,255,230,0.526
+1987,New York Mets,240,245,0.495
+1988,New York Mets,208,277,0.429
+1989,New York Mets,186,251,0.426
+1990,New York Mets,183,236,0.437
+1991,New York Mets,195,224,0.465
+1992,New York Mets,228,240,0.487
+1993,New York Mets,247,239,0.508
+1994,New York Mets,273,214,0.561
+1995,New York Mets,279,208,0.573
+1996,New York Mets,273,214,0.561
+1997,New York Mets,251,234,0.518
+1998,New York Mets,223,261,0.461
+1999,New York Mets,212,272,0.438
+2000,New York Mets,220,265,0.454
+2001,New York Mets,251,235,0.516
+2002,New York Mets,268,218,0.551
+2003,New York Mets,274,212,0.564
+2004,New York Mets,247,239,0.508
+2005,New York Mets,238,248,0.49
+2006,New York Mets,226,260,0.465
+2007,New York Mets,230,256,0.473
+2008,New York Mets,225,261,0.463
+2009,New York Mets,227,259,0.467
+2010,New York Mets,243,243,0.5
+2011,New York Mets,256,230,0.527
+2012,New York Mets,247,239,0.508
+2013,New York Mets,234,252,0.481
+2014,New York Mets,233,253,0.479
+1965,New York Yankees,256,229,0.528
+1966,New York Yankees,255,230,0.526
+1967,New York Yankees,254,225,0.53
+1968,New York Yankees,241,238,0.503
+1969,New York Yankees,248,231,0.518
+1970,New York Yankees,252,232,0.521
+1971,New York Yankees,269,212,0.559
+1972,New York Yankees,280,201,0.582
+1973,New York Yankees,297,187,0.614
+1974,New York Yankees,289,196,0.596
+1975,New York Yankees,292,193,0.602
+1976,New York Yankees,251,178,0.585
+1977,New York Yankees,241,190,0.559
+1978,New York Yankees,229,202,0.531
+1979,New York Yankees,257,229,0.529
+1980,New York Yankees,275,210,0.567
+1981,New York Yankees,274,211,0.565
+1982,New York Yankees,276,209,0.569
+1983,New York Yankees,264,221,0.544
+1984,New York Yankees,248,236,0.512
+1985,New York Yankees,226,258,0.467
+1986,New York Yankees,212,273,0.437
+1987,New York Yankees,214,272,0.44
+1988,New York Yankees,235,251,0.484
+1989,New York Yankees,234,203,0.535
+1990,New York Yankees,237,182,0.566
+1991,New York Yankees,241,178,0.575
+1992,New York Yankees,267,201,0.571
+1993,New York Yankees,302,184,0.621
+1994,New York Yankees,308,178,0.634
+1995,New York Yankees,299,186,0.616
+1996,New York Yankees,280,203,0.58
+1997,New York Yankees,285,197,0.591
+1998,New York Yankees,299,184,0.619
+1999,New York Yankees,305,180,0.629
+2000,New York Yankees,297,189,0.611
+2001,New York Yankees,293,193,0.603
+2002,New York Yankees,286,200,0.588
+2003,New York Yankees,280,206,0.576
+2004,New York Yankees,286,200,0.588
+2005,New York Yankees,287,199,0.591
+2006,New York Yankees,295,191,0.607
+2007,New York Yankees,287,199,0.591
+2008,New York Yankees,277,209,0.57
+2009,New York Yankees,264,222,0.543
+2010,New York Yankees,256,230,0.527
+2011,New York Yankees,255,231,0.525
+2012,New York Yankees,262,224,0.539
+2013,New York Yankees,275,211,0.566
+2014,New York Yankees,294,192,0.605
+1965,Oakland Athletics,259,227,0.533
+1966,Oakland Athletics,278,207,0.573
+1967,Oakland Athletics,283,195,0.592
+1968,Oakland Athletics,288,190,0.603
+1969,Oakland Athletics,277,202,0.578
+1970,Oakland Athletics,282,204,0.58
+1971,Oakland Athletics,275,210,0.567
+1972,Oakland Athletics,248,236,0.512
+1973,Oakland Athletics,219,265,0.452
+1974,Oakland Athletics,186,299,0.384
+1975,Oakland Athletics,206,280,0.424
+1976,Oakland Athletics,201,232,0.464
+1977,Oakland Athletics,215,218,0.497
+1978,Oakland Athletics,206,227,0.476
+1979,Oakland Athletics,219,267,0.451
+1980,Oakland Athletics,228,258,0.469
+1981,Oakland Athletics,230,256,0.473
+1982,Oakland Athletics,234,252,0.481
+1983,Oakland Athletics,261,225,0.537
+1984,Oakland Athletics,284,202,0.584
+1985,Oakland Athletics,306,180,0.63
+1986,Oakland Athletics,286,200,0.588
+1987,Oakland Athletics,283,203,0.582
+1988,Oakland Athletics,248,238,0.51
+1989,Oakland Athletics,215,223,0.491
+1990,Oakland Athletics,186,234,0.443
+1991,Oakland Athletics,196,224,0.467
+1992,Oakland Athletics,210,258,0.449
+1993,Oakland Athletics,217,269,0.447
+1994,Oakland Athletics,226,260,0.465
+1995,Oakland Athletics,252,233,0.52
+1996,Oakland Athletics,280,205,0.577
+1997,Oakland Athletics,296,189,0.61
+1998,Oakland Athletics,301,185,0.619
+1999,Oakland Athletics,290,196,0.597
+2000,Oakland Athletics,275,211,0.566
+2001,Oakland Athletics,272,214,0.56
+2002,Oakland Athletics,257,229,0.529
+2003,Oakland Athletics,244,241,0.503
+2004,Oakland Athletics,226,259,0.466
+2005,Oakland Athletics,231,254,0.476
+2006,Oakland Athletics,230,256,0.473
+2007,Oakland Athletics,249,237,0.512
+2008,Oakland Athletics,264,222,0.543
+2009,Oakland Athletics,278,208,0.572
+2010,Oakland Athletics,252,234,0.519
+2011,Oakland Athletics,225,261,0.463
+2012,Oakland Athletics,212,274,0.436
+2013,Oakland Athletics,241,245,0.496
+2014,Oakland Athletics,269,217,0.553
+1965,Philadelphia Phillies,212,273,0.437
+1966,Philadelphia Phillies,203,282,0.419
+1967,Philadelphia Phillies,199,280,0.415
+1968,Philadelphia Phillies,197,283,0.41
+1969,Philadelphia Phillies,210,270,0.438
+1970,Philadelphia Phillies,237,249,0.488
+1971,Philadelphia Phillies,267,219,0.549
+1972,Philadelphia Phillies,288,198,0.593
+1973,Philadelphia Phillies,292,194,0.601
+1974,Philadelphia Phillies,275,211,0.566
+1975,Philadelphia Phillies,265,221,0.545
+1976,Philadelphia Phillies,234,197,0.543
+1977,Philadelphia Phillies,239,192,0.555
+1978,Philadelphia Phillies,238,193,0.552
+1979,Philadelphia Phillies,260,226,0.535
+1980,Philadelphia Phillies,246,240,0.506
+1981,Philadelphia Phillies,242,243,0.499
+1982,Philadelphia Phillies,241,244,0.497
+1983,Philadelphia Phillies,231,253,0.477
+1984,Philadelphia Phillies,212,273,0.437
+1985,Philadelphia Phillies,209,276,0.431
+1986,Philadelphia Phillies,222,264,0.457
+1987,Philadelphia Phillies,225,261,0.463
+1988,Philadelphia Phillies,245,241,0.504
+1989,Philadelphia Phillies,221,218,0.503
+1990,Philadelphia Phillies,220,201,0.523
+1991,Philadelphia Phillies,190,231,0.451
+1992,Philadelphia Phillies,204,264,0.436
+1993,Philadelphia Phillies,210,276,0.432
+1994,Philadelphia Phillies,220,266,0.453
+1995,Philadelphia Phillies,217,269,0.447
+1996,Philadelphia Phillies,228,258,0.469
+1997,Philadelphia Phillies,231,254,0.476
+1998,Philadelphia Phillies,252,233,0.52
+1999,Philadelphia Phillies,252,233,0.52
+2000,Philadelphia Phillies,260,226,0.535
+2001,Philadelphia Phillies,259,227,0.533
+2002,Philadelphia Phillies,262,224,0.539
+2003,Philadelphia Phillies,266,220,0.547
+2004,Philadelphia Phillies,274,212,0.564
+2005,Philadelphia Phillies,282,204,0.58
+2006,Philadelphia Phillies,292,194,0.601
+2007,Philadelphia Phillies,280,206,0.576
+2008,Philadelphia Phillies,256,230,0.527
+2009,Philadelphia Phillies,227,259,0.467
+2010,Philadelphia Phillies,209,277,0.43
+2011,Philadelphia Phillies,207,279,0.426
+2012,Philadelphia Phillies,200,286,0.412
+2013,Philadelphia Phillies,217,269,0.447
+2014,Philadelphia Phillies,227,259,0.467
+1965,Pittsburgh Pirates,257,229,0.529
+1966,Pittsburgh Pirates,274,212,0.564
+1967,Pittsburgh Pirates,282,197,0.589
+1968,Pittsburgh Pirates,273,206,0.57
+1969,Pittsburgh Pirates,264,215,0.551
+1970,Pittsburgh Pirates,260,225,0.536
+1971,Pittsburgh Pirates,272,213,0.561
+1972,Pittsburgh Pirates,280,205,0.577
+1973,Pittsburgh Pirates,276,209,0.569
+1974,Pittsburgh Pirates,282,203,0.581
+1975,Pittsburgh Pirates,269,216,0.555
+1976,Pittsburgh Pirates,227,199,0.533
+1977,Pittsburgh Pirates,213,213,0.5
+1978,Pittsburgh Pirates,214,212,0.502
+1979,Pittsburgh Pirates,243,243,0.5
+1980,Pittsburgh Pirates,216,269,0.445
+1981,Pittsburgh Pirates,196,289,0.404
+1982,Pittsburgh Pirates,201,284,0.414
+1983,Pittsburgh Pirates,229,255,0.473
+1984,Pittsburgh Pirates,239,245,0.494
+1985,Pittsburgh Pirates,254,230,0.525
+1986,Pittsburgh Pirates,267,219,0.549
+1987,Pittsburgh Pirates,289,197,0.595
+1988,Pittsburgh Pirates,269,217,0.553
+1989,Pittsburgh Pirates,224,214,0.511
+1990,Pittsburgh Pirates,186,234,0.443
+1991,Pittsburgh Pirates,184,236,0.438
+1992,Pittsburgh Pirates,210,258,0.449
+1993,Pittsburgh Pirates,221,265,0.455
+1994,Pittsburgh Pirates,226,259,0.466
+1995,Pittsburgh Pirates,216,269,0.445
+1996,Pittsburgh Pirates,209,276,0.431
+1997,Pittsburgh Pirates,203,282,0.419
+1998,Pittsburgh Pirates,209,276,0.431
+1999,Pittsburgh Pirates,219,265,0.452
+2000,Pittsburgh Pirates,214,271,0.441
+2001,Pittsburgh Pirates,206,279,0.425
+2002,Pittsburgh Pirates,202,284,0.416
+2003,Pittsburgh Pirates,202,284,0.416
+2004,Pittsburgh Pirates,197,288,0.406
+2005,Pittsburgh Pirates,186,299,0.384
+2006,Pittsburgh Pirates,191,294,0.394
+2007,Pittsburgh Pirates,208,278,0.428
+2008,Pittsburgh Pirates,245,241,0.504
+2009,Pittsburgh Pirates,261,225,0.537
+2010,Pittsburgh Pirates,280,206,0.576
+2011,Pittsburgh Pirates,264,221,0.544
+2012,Pittsburgh Pirates,251,234,0.518
+2013,Pittsburgh Pirates,235,249,0.486
+2014,Pittsburgh Pirates,226,259,0.466
+1969,San Diego Padres,178,299,0.373
+1970,San Diego Padres,191,295,0.393
+1971,San Diego Padres,204,282,0.42
+1972,San Diego Padres,213,273,0.438
+1973,San Diego Padres,226,260,0.465
+1974,San Diego Padres,221,264,0.456
+1975,San Diego Padres,225,260,0.464
+1976,San Diego Padres,182,251,0.42
+1977,San Diego Padres,195,239,0.449
+1978,San Diego Padres,203,231,0.468
+1979,San Diego Padres,254,232,0.523
+1980,San Diego Padres,256,230,0.527
+1981,San Diego Padres,249,237,0.512
+1982,San Diego Padres,222,264,0.457
+1983,San Diego Padres,222,263,0.458
+1984,San Diego Padres,237,248,0.489
+1985,San Diego Padres,247,238,0.509
+1986,San Diego Padres,248,238,0.51
+1987,San Diego Padres,241,245,0.496
+1988,San Diego Padres,227,259,0.467
+1989,San Diego Padres,190,251,0.431
+1990,San Diego Padres,178,245,0.421
+1991,San Diego Padres,208,215,0.492
+1992,San Diego Padres,237,231,0.506
+1993,San Diego Padres,265,221,0.545
+1994,San Diego Padres,248,238,0.51
+1995,San Diego Padres,248,238,0.51
+1996,San Diego Padres,229,257,0.471
+1997,San Diego Padres,221,265,0.455
+1998,San Diego Padres,209,277,0.43
+1999,San Diego Padres,217,269,0.447
+2000,San Diego Padres,233,253,0.479
+2001,San Diego Padres,257,229,0.529
+2002,San Diego Padres,259,228,0.532
+2003,San Diego Padres,240,247,0.493
+2004,San Diego Padres,227,260,0.466
+2005,San Diego Padres,228,258,0.469
+2006,San Diego Padres,236,250,0.486
+2007,San Diego Padres,237,249,0.488
+2008,San Diego Padres,223,263,0.459
+2009,San Diego Padres,229,257,0.471
+2010,San Diego Padres,227,259,0.467
+2011,San Diego Padres,219,267,0.451
+2012,San Diego Padres,213,273,0.438
+2013,San Diego Padres,205,281,0.422
+2014,San Diego Padres,207,279,0.426
+1965,San Francisco Giants,264,222,0.543
+1966,San Francisco Giants,266,220,0.547
+1967,San Francisco Giants,245,234,0.511
+1968,San Francisco Giants,247,232,0.516
+1969,San Francisco Giants,229,250,0.478
+1970,San Francisco Giants,240,245,0.495
+1971,San Francisco Giants,226,259,0.466
+1972,San Francisco Giants,229,256,0.472
+1973,San Francisco Giants,238,248,0.49
+1974,San Francisco Giants,235,251,0.484
+1975,San Francisco Giants,235,250,0.485
+1976,San Francisco Giants,202,232,0.465
+1977,San Francisco Giants,218,216,0.502
+1978,San Francisco Giants,222,213,0.51
+1979,San Francisco Giants,232,254,0.477
+1980,San Francisco Giants,207,279,0.426
+1981,San Francisco Giants,211,275,0.434
+1982,San Francisco Giants,235,251,0.484
+1983,San Francisco Giants,256,230,0.527
+1984,San Francisco Giants,265,221,0.545
+1985,San Francisco Giants,260,226,0.535
+1986,San Francisco Giants,252,234,0.519
+1987,San Francisco Giants,232,254,0.477
+1988,San Francisco Giants,250,236,0.514
+1989,San Francisco Giants,230,209,0.524
+1990,San Francisco Giants,225,196,0.534
+1991,San Francisco Giants,190,231,0.451
+1992,San Francisco Giants,225,243,0.481
+1993,San Francisco Giants,247,240,0.507
+1994,San Francisco Giants,265,222,0.544
+1995,San Francisco Giants,272,215,0.559
+1996,San Francisco Giants,273,213,0.562
+1997,San Francisco Giants,282,203,0.581
+1998,San Francisco Giants,285,199,0.589
+1999,San Francisco Giants,286,198,0.591
+2000,San Francisco Giants,266,219,0.548
+2001,San Francisco Giants,242,243,0.499
+2002,San Francisco Giants,222,263,0.458
+2003,San Francisco Giants,219,266,0.452
+2004,San Francisco Giants,231,255,0.475
+2005,San Francisco Giants,252,234,0.519
+2006,San Francisco Giants,266,220,0.547
+2007,San Francisco Giants,272,214,0.56
+2008,San Francisco Giants,256,230,0.527
+2009,San Francisco Giants,258,228,0.531
+2010,San Francisco Giants,248,238,0.51
+2011,San Francisco Giants,259,227,0.533
+2012,San Francisco Giants,235,251,0.484
+2013,San Francisco Giants,224,262,0.461
+2014,San Francisco Giants,214,272,0.44
+1977,Seattle Mariners,179,254,0.413
+1978,Seattle Mariners,180,253,0.416
+1979,Seattle Mariners,210,276,0.432
+1980,Seattle Mariners,208,278,0.428
+1981,Seattle Mariners,215,271,0.442
+1982,Seattle Mariners,219,267,0.451
+1983,Seattle Mariners,213,272,0.439
+1984,Seattle Mariners,219,266,0.452
+1985,Seattle Mariners,218,267,0.449
+1986,Seattle Mariners,233,253,0.479
+1987,Seattle Mariners,224,262,0.461
+1988,Seattle Mariners,229,257,0.471
+1989,Seattle Mariners,195,241,0.447
+1990,Seattle Mariners,210,209,0.501
+1991,Seattle Mariners,213,205,0.51
+1992,Seattle Mariners,254,214,0.543
+1993,Seattle Mariners,251,233,0.519
+1994,Seattle Mariners,245,240,0.505
+1995,Seattle Mariners,246,239,0.507
+1996,Seattle Mariners,286,200,0.588
+1997,Seattle Mariners,300,186,0.617
+1998,Seattle Mariners,302,184,0.621
+1999,Seattle Mariners,249,237,0.512
+2000,Seattle Mariners,225,261,0.463
+2001,Seattle Mariners,210,276,0.432
+2002,Seattle Mariners,235,251,0.484
+2003,Seattle Mariners,227,259,0.467
+2004,Seattle Mariners,234,252,0.481
+2005,Seattle Mariners,207,279,0.426
+2006,Seattle Mariners,213,273,0.438
+2007,Seattle Mariners,203,283,0.418
+2008,Seattle Mariners,213,273,0.438
+2009,Seattle Mariners,233,253,0.479
+2010,Seattle Mariners,234,252,0.481
+2011,Seattle Mariners,249,237,0.512
+2012,Seattle Mariners,240,246,0.494
+2013,Seattle Mariners,253,233,0.521
+2014,Seattle Mariners,235,251,0.484
+1965,St. Louis Cardinals,260,226,0.535
+1966,St. Louis Cardinals,253,233,0.521
+1967,St. Louis Cardinals,241,239,0.502
+1968,St. Louis Cardinals,246,234,0.512
+1969,St. Louis Cardinals,242,237,0.505
+1970,St. Louis Cardinals,249,236,0.513
+1971,St. Louis Cardinals,240,245,0.495
+1972,St. Louis Cardinals,237,249,0.488
+1973,St. Louis Cardinals,224,262,0.461
+1974,St. Louis Cardinals,238,248,0.49
+1975,St. Louis Cardinals,229,257,0.471
+1976,St. Louis Cardinals,219,207,0.514
+1977,St. Louis Cardinals,225,201,0.528
+1978,St. Louis Cardinals,230,196,0.54
+1979,St. Louis Cardinals,255,231,0.525
+1980,St. Louis Cardinals,264,222,0.543
+1981,St. Louis Cardinals,264,221,0.544
+1982,St. Louis Cardinals,275,210,0.567
+1983,St. Louis Cardinals,250,235,0.515
+1984,St. Louis Cardinals,257,229,0.529
+1985,St. Louis Cardinals,232,254,0.477
+1986,St. Louis Cardinals,240,246,0.494
+1987,St. Louis Cardinals,237,249,0.488
+1988,St. Louis Cardinals,254,232,0.523
+1989,St. Louis Cardinals,223,215,0.509
+1990,St. Louis Cardinals,202,217,0.482
+1991,St. Louis Cardinals,203,216,0.484
+1992,St. Louis Cardinals,223,244,0.478
+1993,St. Louis Cardinals,244,242,0.502
+1994,St. Louis Cardinals,231,254,0.476
+1995,St. Louis Cardinals,253,232,0.522
+1996,St. Louis Cardinals,263,222,0.542
+1997,St. Louis Cardinals,285,201,0.586
+1998,St. Louis Cardinals,275,211,0.566
+1999,St. Louis Cardinals,287,199,0.591
+2000,St. Louis Cardinals,290,196,0.597
+2001,St. Louis Cardinals,288,197,0.594
+2002,St. Louis Cardinals,261,224,0.538
+2003,St. Louis Cardinals,247,238,0.509
+2004,St. Louis Cardinals,255,231,0.525
+2005,St. Louis Cardinals,263,223,0.541
+2006,St. Louis Cardinals,267,219,0.549
+2007,St. Louis Cardinals,264,222,0.543
+2008,St. Louis Cardinals,275,211,0.566
+2009,St. Louis Cardinals,275,211,0.566
+2010,St. Louis Cardinals,287,199,0.591
+2011,St. Louis Cardinals,276,210,0.568
+2012,St. Louis Cardinals,269,217,0.553
+2013,St. Louis Cardinals,257,229,0.529
+2014,St. Louis Cardinals,262,224,0.539
+1998,Tampa Bay Rays,180,305,0.371
+1999,Tampa Bay Rays,188,296,0.388
+2000,Tampa Bay Rays,200,285,0.412
+2001,Tampa Bay Rays,198,287,0.408
+2002,Tampa Bay Rays,194,292,0.399
+2003,Tampa Bay Rays,224,262,0.461
+2004,Tampa Bay Rays,247,239,0.508
+2005,Tampa Bay Rays,277,209,0.57
+2006,Tampa Bay Rays,271,215,0.558
+2007,Tampa Bay Rays,277,209,0.57
+2008,Tampa Bay Rays,273,214,0.561
+2009,Tampa Bay Rays,259,228,0.532
+2010,Tampa Bay Rays,249,238,0.511
+2011,Tampa Bay Rays,225,261,0.463
+2012,Tampa Bay Rays,228,258,0.469
+2013,Tampa Bay Rays,238,248,0.49
+2014,Tampa Bay Rays,266,220,0.547
+1965,Texas Rangers,221,264,0.456
+1966,Texas Rangers,219,264,0.453
+1967,Texas Rangers,187,288,0.394
+1968,Texas Rangers,174,301,0.366
+1969,Texas Rangers,195,281,0.41
+1970,Texas Rangers,220,264,0.455
+1971,Texas Rangers,239,245,0.494
+1972,Texas Rangers,249,237,0.512
+1973,Texas Rangers,257,229,0.529
+1974,Texas Rangers,264,222,0.543
+1975,Texas Rangers,246,239,0.507
+1976,Texas Rangers,216,212,0.505
+1977,Texas Rangers,197,231,0.46
+1978,Texas Rangers,198,231,0.462
+1979,Texas Rangers,210,275,0.433
+1980,Texas Rangers,208,276,0.43
+1981,Texas Rangers,218,266,0.45
+1982,Texas Rangers,224,261,0.462
+1983,Texas Rangers,232,253,0.478
+1984,Texas Rangers,228,257,0.47
+1985,Texas Rangers,236,249,0.487
+1986,Texas Rangers,251,235,0.516
+1987,Texas Rangers,245,241,0.504
+1988,Texas Rangers,248,238,0.51
+1989,Texas Rangers,215,223,0.491
+1990,Texas Rangers,212,208,0.505
+1991,Texas Rangers,216,204,0.514
+1992,Texas Rangers,241,227,0.515
+1993,Texas Rangers,255,231,0.525
+1994,Texas Rangers,260,226,0.535
+1995,Texas Rangers,254,232,0.523
+1996,Texas Rangers,239,247,0.492
+1997,Texas Rangers,216,270,0.444
+1998,Texas Rangers,216,270,0.444
+1999,Texas Rangers,232,254,0.477
+2000,Texas Rangers,239,247,0.492
+2001,Texas Rangers,248,238,0.51
+2002,Texas Rangers,234,252,0.481
+2003,Texas Rangers,234,252,0.481
+2004,Texas Rangers,241,245,0.496
+2005,Texas Rangers,256,230,0.527
+2006,Texas Rangers,273,213,0.562
+2007,Texas Rangers,279,207,0.574
+2008,Texas Rangers,280,207,0.575
+2009,Texas Rangers,251,236,0.515
+2010,Texas Rangers,246,241,0.505
+2011,Texas Rangers,250,236,0.514
+2012,Texas Rangers,261,225,0.537
+2013,Texas Rangers,240,246,0.494
+2014,Texas Rangers,223,263,0.459
+1977,Toronto Blue Jays,182,248,0.423
+1978,Toronto Blue Jays,204,226,0.474
+1979,Toronto Blue Jays,256,230,0.527
+1980,Toronto Blue Jays,277,208,0.571
+1981,Toronto Blue Jays,274,211,0.565
+1982,Toronto Blue Jays,281,204,0.579
+1983,Toronto Blue Jays,269,217,0.553
+1984,Toronto Blue Jays,272,214,0.56
+1985,Toronto Blue Jays,262,224,0.539
+1986,Toronto Blue Jays,266,220,0.547
+1987,Toronto Blue Jays,273,213,0.562
+1988,Toronto Blue Jays,282,204,0.58
+1989,Toronto Blue Jays,246,193,0.56
+1990,Toronto Blue Jays,206,215,0.489
+1991,Toronto Blue Jays,185,236,0.439
+1992,Toronto Blue Jays,206,262,0.44
+1993,Toronto Blue Jays,238,248,0.49
+1994,Toronto Blue Jays,248,238,0.51
+1995,Toronto Blue Jays,255,231,0.525
+1996,Toronto Blue Jays,247,239,0.508
+1997,Toronto Blue Jays,241,245,0.496
+1998,Toronto Blue Jays,244,242,0.502
+1999,Toronto Blue Jays,231,254,0.476
+2000,Toronto Blue Jays,233,252,0.48
+2001,Toronto Blue Jays,234,251,0.482
+2002,Toronto Blue Jays,250,236,0.514
+2003,Toronto Blue Jays,256,230,0.527
+2004,Toronto Blue Jays,244,242,0.502
+2005,Toronto Blue Jays,246,240,0.506
+2006,Toronto Blue Jays,241,245,0.496
+2007,Toronto Blue Jays,239,247,0.492
+2008,Toronto Blue Jays,228,258,0.469
+2009,Toronto Blue Jays,230,256,0.473
+2010,Toronto Blue Jays,250,236,0.514
+2011,Toronto Blue Jays,265,221,0.545
+2012,Toronto Blue Jays,258,228,0.531
+2013,Toronto Blue Jays,238,248,0.49
+2014,Toronto Blue Jays,216,270,0.444
+1969,Washington Nationals,228,251,0.476
+1970,Washington Nationals,233,252,0.48
+1971,Washington Nationals,209,276,0.431
+1972,Washington Nationals,205,281,0.422
+1973,Washington Nationals,206,280,0.424
+1974,Washington Nationals,246,238,0.508
+1975,Washington Nationals,261,223,0.539
+1976,Washington Nationals,245,185,0.57
+1977,Washington Nationals,236,196,0.546
+1978,Washington Nationals,228,204,0.528
+1979,Washington Nationals,246,239,0.507
+1980,Washington Nationals,244,240,0.504
+1981,Washington Nationals,240,243,0.497
+1982,Washington Nationals,253,231,0.523
+1983,Washington Nationals,250,235,0.515
+1984,Washington Nationals,253,233,0.521
+1985,Washington Nationals,247,239,0.508
+1986,Washington Nationals,237,248,0.489
+1987,Washington Nationals,243,242,0.501
+1988,Washington Nationals,252,233,0.52
+1989,Washington Nationals,255,183,0.582
+1990,Washington Nationals,234,186,0.557
+1991,Washington Nationals,228,192,0.543
+1992,Washington Nationals,232,236,0.496
+1993,Washington Nationals,231,255,0.475
+1994,Washington Nationals,211,275,0.434
+1995,Washington Nationals,200,286,0.412
+1996,Washington Nationals,203,283,0.418
+1997,Washington Nationals,218,268,0.449
+1998,Washington Nationals,234,252,0.481
+1999,Washington Nationals,233,253,0.479
+2000,Washington Nationals,231,255,0.475
+2001,Washington Nationals,219,267,0.451
+2002,Washington Nationals,225,261,0.463
+2003,Washington Nationals,203,282,0.419
+2004,Washington Nationals,191,294,0.394
+2005,Washington Nationals,187,298,0.386
+2006,Washington Nationals,208,277,0.429
+2007,Washington Nationals,247,238,0.509
+2008,Washington Nationals,264,221,0.544
+2009,Washington Nationals,280,206,0.576
+2010,Washington Nationals,265,221,0.545
+2011,Washington Nationals,274,212,0.564
+2012,Washington Nationals,275,211,0.566
+2013,Washington Nationals,274,212,0.564
+2014,Washington Nationals,272,214,0.56
