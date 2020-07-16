@@ -839,6 +839,10 @@
   cursor: pointer;
 }
 
+.rays_title {
+  color: #8FBCE6;
+}
+
 /*Blue Jays Styles*/
 
 .blue_jays_chart::before {
