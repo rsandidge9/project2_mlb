@@ -161,6 +161,8 @@
                                         </div>
                                         <button id="filter-btn" type="button" class="btn btn-default">Filter
                                             Table</button>
+                                        <button id="filter-btn" type="button" class="btn btn1 btn-default">Hide Graph</button>
+                                        <button id="filter-btn" type="button" class="btn btn2 btn-default" >Show Graph</button>
                                     </form>
                                 </div>
                             </div>
@@ -204,8 +206,20 @@
             <script type="text/javascript" src="js/app.js"></script>
             <script>
                 $(document).ready(function() {
+                $('.btn1').hide();
+                $('.btn2').hide();
                     $('.btn').click(function() {
-                        alert('Data Ready');
+                        $('.btn1').show();
+                    });
+                    $('.btn1').click(function(){
+                        $('.btn1').hide();
+                        $('.btn2').show();
+                        $('.astros_chart').hide();
+                    });
+                    $('.btn2').click(function(){
+                        $('.btn1').show();
+                        $('.btn2').hide();
+                        $('.astros_chart').show();
                     });
                 });
             </script>
