@@ -1,4 +1,4 @@
-var svgWidth = 860;
+var svgWidth = 960;
 var svgHeight = 500;
 
 var margin = {
