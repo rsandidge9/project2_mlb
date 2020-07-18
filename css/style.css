@@ -78,11 +78,11 @@
 .angels_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/los-angeles-angels-logo-present.gif");
   background-repeat: no-repeat;
@@ -136,11 +136,11 @@
 .athletics_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/oakland-athletics-logo-present.gif");
   background-repeat: no-repeat;
@@ -195,11 +195,11 @@
 .mariners_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_seattle-mariners-logo-present.gif");
   background-repeat: no-repeat;
@@ -254,11 +254,11 @@
 .rangers_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_texas-rangers-logo-present.gif");
   background-repeat: no-repeat;
@@ -313,11 +313,11 @@
 .white_sox_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_chicago-white-sox-logo-present.gif");
   background-repeat: no-repeat;
@@ -372,11 +372,11 @@
 .indians_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_cleveland-indians-logo-present.gif");
   background-repeat: no-repeat;
@@ -431,11 +431,11 @@
 .tigers_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_detroit-tigers-logo-present.gif");
   background-repeat: no-repeat;
@@ -490,11 +490,11 @@
 .royals_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_kansas-city-royals-logo-present.gif");
   background-repeat: no-repeat;
@@ -549,11 +549,11 @@
 .twins_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_minnesota-twins-logo-present.gif");
   background-repeat: no-repeat;
@@ -608,11 +608,11 @@
 .orioles_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_baltimore-orioles-logo-present.gif");
   background-repeat: no-repeat;
@@ -667,11 +667,11 @@
 .red_sox_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_boston-red-sox-logo-present.gif");
   background-repeat: no-repeat;
@@ -723,14 +723,14 @@
 
 /*Yankees Styles*/
 
-.Yankees_chart::before {
+.yankees_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_new-york-yankees-logo-present.gif");
   background-repeat: no-repeat;
@@ -785,11 +785,11 @@
 .rays_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_tampa-bay-devil-rays-logo-present.gif");
   background-repeat: no-repeat;
@@ -855,11 +855,11 @@
 .blue_jays_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_toronto-blue-jays-present.gif");
   background-repeat: no-repeat;
@@ -915,11 +915,11 @@
 .diamondbacks_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_arizona-diamond-backs-logo-present.gif");
   background-repeat: no-repeat;
@@ -974,11 +974,11 @@
 .rockies_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_colorado-rockies-logo-present.gif");
   background-repeat: no-repeat;
@@ -1033,11 +1033,11 @@
 .dodgers_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_los-angeles-dodgers-logo-present.gif");
   background-repeat: no-repeat;
@@ -1092,11 +1092,11 @@
 .padres_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_san-diego-padres-logo-present.gif");
   background-repeat: no-repeat;
@@ -1151,11 +1151,11 @@
 .giants_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_san-francisco-giants-logo-present.gif");
   background-repeat: no-repeat;
@@ -1210,11 +1210,11 @@
 .cubs_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_chicago-cubs-logo-present.gif");
   background-repeat: no-repeat;
@@ -1269,11 +1269,11 @@
 .reds_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_cincinnati-reds-logo-present.gif");
   background-repeat: no-repeat;
@@ -1328,11 +1328,11 @@
 .brewers_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_milwaukee-brewers-logo-present.gif");
   background-repeat: no-repeat;
@@ -1387,11 +1387,11 @@
 .pirates_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_pittsburgh-pirates-logo-present.gif");
   background-repeat: no-repeat;
@@ -1446,11 +1446,11 @@
 .cardinals_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_st-louis-cardinals-logo-present.gif");
   background-repeat: no-repeat;
@@ -1505,11 +1505,11 @@
 .braves_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_atlanta-braves-logo-present.gif");
   background-repeat: no-repeat;
@@ -1564,11 +1564,11 @@
 .marlins_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_miami-marlins-logo-present.gif");
   background-repeat: no-repeat;
@@ -1623,11 +1623,11 @@
 .mets_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_new-york-mets-logo-present.gif");
   background-repeat: no-repeat;
@@ -1682,11 +1682,11 @@
 .phillies_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_philadelphia-phillies-logo-present.gif");
   background-repeat: no-repeat;
@@ -1741,11 +1741,11 @@
 .nationals_chart::before {
   position: relative;
   top: 100px;
-  left: 400px;
+  left: 800px;
   z-index: -1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   content: " ";
   background-image: url("https://findthatlogo.com/wp-content/gallery/mlb-team-logos/thumbs/thumbs_washington-nationals-logo-present.gif");
   background-repeat: no-repeat;

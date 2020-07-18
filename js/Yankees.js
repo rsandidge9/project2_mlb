@@ -14,7 +14,7 @@ var height = svgHeight - margin.top - margin.bottom;
 // Create an SVG wrapper, append an SVG group that will hold our chart,
 // and shift the latter by left and top margins.
 var svg = d3
-  .select(".rays_chart")
+  .select(".yankees_chart")
   .append("svg")
   .attr("width", svgWidth)
   .attr("height", svgHeight);
@@ -51,19 +51,19 @@ function renderAxes(newYScale, yAxis) {
 
 }
 
-// function used for updating circles group with a transition to
-// new circles
-function renderCircles(circlesGroup, newYScale, chosenYAxis) {
+// function used for updating bars group with a transition to
+// new bars
+function renderBars(barGroup, newYScale, chosenYAxis) {
 
-  circlesGroup.transition()
+  barGroup.transition()
     .duration(1000)
     .attr("y", d => newYScale(d[chosenYAxis]))
     .attr("height", d => height - newYScale(d[chosenYAxis]))
-  return circlesGroup;
+  return barGroup;
 }
 
-// function used for updating circles group with new tooltip
-function updateToolTip(chosenYAxis, circlesGroup) {
+// function used for updating bars group with new tooltip
+function updateToolTip(chosenYAxis, barGroup) {
 
   var label;
 
@@ -75,15 +75,15 @@ function updateToolTip(chosenYAxis, circlesGroup) {
   }
 
   var toolTip = d3.tip()
-    .attr("class", "rays_tooltip")
+    .attr("class", "yankees_tooltip")
     .offset([80, -60])
     .html(function (d) {
       return (`${d.Year + " " + d.Current_Franchise}<br>${label} ${d[chosenYAxis]}`);
     });
 
-  circlesGroup.call(toolTip);
+  barGroup.call(toolTip);
 
-  circlesGroup.on("mouseover", function (data) {
+  barGroup.on("mouseover", function (data) {
     toolTip.show(data);
   })
     // onmouseout event
@@ -91,7 +91,7 @@ function updateToolTip(chosenYAxis, circlesGroup) {
       toolTip.hide(data);
     });
 
-  return circlesGroup;
+  return barGroup;
 }
 
 // Retrieve data from the CSV file and execute everything below
@@ -99,7 +99,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
   if (err) throw err;
 
   var FranchiseTeamData = teamData.filter(function (d) {
-    if (d["Current_Franchise"] == "Tampa Bay Rays") {
+    if (d["Current_Franchise"] == "New York Yankees") {
       return d;
     }
   })
@@ -143,8 +143,8 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .call(leftAxis);
 
 
-  // append initial circles
-  var circlesGroup = chartGroup.selectAll("rect")
+  // append initial bars
+  var barGroup = chartGroup.selectAll("rect")
     .data(FranchiseTeamData)
     .enter()
     .append("rect")
@@ -152,7 +152,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("y", d => yLinearScale(d[chosenYAxis]))
     .attr("height", d => height - yLinearScale(d[chosenYAxis]))
     .attr("width", xLinearScale.bandwidth())
-    .classed("rays_inactive", true)
+    .classed("yankees_inactive", true)
 
   // Create group for two x-axis labels
   var labelsGroup = chartGroup.append("g")
@@ -162,8 +162,8 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("x", width / 2 )
     .attr("y", 20)
     .style("text-anchor", "center")
-    .text("Tampa Bay Rays Draft History by WAR")
-    .classed("rays_title", true)
+    .text("New York Yankees Draft History by WAR")
+    .classed("yankees_title", true)
   ;
 
 
@@ -174,7 +174,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("transform", "rotate(-90)")
     .attr("value", "TC_Total_WAR") // value to grab for event listener
     .classed("active", true)
-    .classed("rays_axis-text", true)
+    .classed("yankees_axis-text", true)
     .text("Team Controlled WAR");
 
 
@@ -184,8 +184,8 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("dy", "1em")
     .attr("transform", "rotate(-90)")
     .attr("value", "Career_Total_WAR") // value to grab for event listener
-    .classed("rays_inactive", true)
-    .classed("rays_axis-text", true)
+    .classed("yankees_inactive", true)
+    .classed("yankees_axis-text", true)
     .text("Career WAR");
 
   //append x axis
@@ -193,11 +193,11 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("x", (width / 2))
     .attr("y", 460)
     .attr("value", "Year")
-    .classed("rays_axis-text", true)
+    .classed("yankees_axis-text", true)
     .text("Year");
 
   // updateToolTip function above csv import
-  var circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
+  var barGroup = updateToolTip(chosenYAxis, barGroup);
 
   // x axis labels event listener
   labelsGroup.selectAll("text")
@@ -218,29 +218,29 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
         // updates x axis with transition
         yAxis = renderAxes(yLinearScale, yAxis);
 
-        // updates circles with new x values
-        circlesGroup = renderCircles(circlesGroup, yLinearScale, chosenYAxis);
+        // updates bars with new x values
+        barGroup = renderBars(barGroup, yLinearScale, chosenYAxis);
 
 
         // updates tooltips with new info
-        circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
+        barGroup = updateToolTip(chosenYAxis, barGroup);
 
         // changes classes to change bold text
         if (chosenYAxis === "Career_Total_WAR") {
           Career_WAR
-            .classed("rays_active", true)
-            .classed("rays_inactive", false);
+            .classed("yankees_active", true)
+            .classed("yankees_inactive", false);
           TC_WAR
-            .classed("rays_active", false)
-            .classed("rays_inactive", true);
+            .classed("yankees_active", false)
+            .classed("yankees_inactive", true);
         }
         else {
           Career_WAR
-            .classed("rays_active", false)
-            .classed("rays_inactive", true);
+            .classed("yankees_active", false)
+            .classed("yankees_inactive", true);
           TC_WAR
-            .classed("rays_active", true)
-            .classed("rays_inactive", false);
+            .classed("yankees_active", true)
+            .classed("yankees_inactive", false);
         }
       }
     });
@@ -255,7 +255,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
 d3.csv("data/Draft_SD_CSV.csv").then(function (playerData) {
 
   var FranchisePlayerData = playerData.filter(function (d) {
-    if (d["Current_Franchise"] == "Tampa Bay Rays") {
+    if (d["Current_Franchise"] == "New York Yankees") {
       return d;
     }
   })
