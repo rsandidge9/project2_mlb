@@ -2,6 +2,10 @@
   border-radius: 8px;
 }
 
+h2 {
+  text-align: right;
+}
+
 .astros_chart::before {
   position: relative;
   top: 100px;
