@@ -51,19 +51,19 @@ function renderAxes(newYScale, yAxis) {
 
 }
 
-// function used for updating circles group with a transition to
-// new circles
-function renderCircles(circlesGroup, newYScale, chosenYAxis) {
+// function used for updating bars group with a transition to
+// new bars
+function renderBars(barGroup, newYScale, chosenYAxis) {
 
-  circlesGroup.transition()
+  barGroup.transition()
     .duration(1000)
     .attr("y", d => newYScale(d[chosenYAxis]))
     .attr("height", d => height - newYScale(d[chosenYAxis]))
-  return circlesGroup;
+  return barGroup;
 }
 
-// function used for updating circles group with new tooltip
-function updateToolTip(chosenYAxis, circlesGroup) {
+// function used for updating bars group with new tooltip
+function updateToolTip(chosenYAxis, barGroup) {
 
   var label;
 
@@ -81,9 +81,9 @@ function updateToolTip(chosenYAxis, circlesGroup) {
       return (`${d.Year + " " + d.Current_Franchise}<br>${label} ${d[chosenYAxis]}`);
     });
 
-  circlesGroup.call(toolTip);
+  barGroup.call(toolTip);
 
-  circlesGroup.on("mouseover", function (data) {
+  barGroup.on("mouseover", function (data) {
     toolTip.show(data);
   })
     // onmouseout event
@@ -91,7 +91,7 @@ function updateToolTip(chosenYAxis, circlesGroup) {
       toolTip.hide(data);
     });
 
-  return circlesGroup;
+  return barGroup;
 }
 
 // Retrieve data from the CSV file and execute everything below
@@ -143,8 +143,8 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .call(leftAxis);
 
 
-  // append initial circles
-  var circlesGroup = chartGroup.selectAll("rect")
+  // append initial bars
+  var barGroup = chartGroup.selectAll("rect")
     .data(FranchiseTeamData)
     .enter()
     .append("rect")
@@ -197,7 +197,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .text("Year");
 
   // updateToolTip function above csv import
-  var circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
+  var barGroup = updateToolTip(chosenYAxis, barGroup);
 
   // x axis labels event listener
   labelsGroup.selectAll("text")
@@ -218,12 +218,12 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
         // updates x axis with transition
         yAxis = renderAxes(yLinearScale, yAxis);
 
-        // updates circles with new x values
-        circlesGroup = renderCircles(circlesGroup, yLinearScale, chosenYAxis);
+        // updates bars with new x values
+        barGroup = renderBars(barGroup, yLinearScale, chosenYAxis);
 
 
         // updates tooltips with new info
-        circlesGroup = updateToolTip(chosenYAxis, circlesGroup);
+        barGroup = updateToolTip(chosenYAxis, barGroup);
 
         // changes classes to change bold text
         if (chosenYAxis === "Career_Total_WAR") {
