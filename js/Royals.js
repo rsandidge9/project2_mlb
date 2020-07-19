@@ -132,6 +132,9 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     chartGroup.append("g")
         .attr("transform", `translate(0,${height})`)
         .call(d3.axisBottom(xLinearScale).tickFormat(i => FranchiseTeamData[i].Year).tickSizeOuter(0))
+        .selectAll("text")
+        .attr("text-anchor", "end")
+        .attr("transform", "rotate(-45)")
 
     // append x axis
     var yAxis = chartGroup.append("g")
@@ -251,7 +254,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
 d3.csv("data/Draft_SD_CSV.csv").then(function (playerData) {
 
     var FranchisePlayerData = playerData.filter(function (d) {
-        if (d["Current_Franchise"] == "Detroit Tigers") {
+        if (d["Current_Franchise"] == "Kansas City Royals") {
             return d;
         }
     })

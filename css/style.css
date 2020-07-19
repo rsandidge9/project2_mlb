@@ -6,6 +6,7 @@ h2 {
   text-align: right;
 }
 
+
 .astros_chart::before {
   position: relative;
   top: 100px;
@@ -77,6 +78,13 @@ h2 {
   cursor: pointer;
 }
 
+.astros_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Angels Styles*/
 
 .angels_chart::before {
@@ -133,6 +141,13 @@ h2 {
 .angels_inactive:hover {
   fill: #BA0021; /*Team secondary color*/
   cursor: pointer;
+}
+
+.angels_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Athletics Styles*/
@@ -194,6 +209,13 @@ h2 {
   cursor: pointer;
 }
 
+.athletics_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Mariners Styles*/
 
 .mariners_chart::before {
@@ -251,6 +273,13 @@ h2 {
 .mariners_inactive:hover {
   fill: #005C5C; /*Team secondary color*/
   cursor: pointer;
+}
+
+.mariners_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Rangers Styles*/
@@ -312,6 +341,13 @@ h2 {
   cursor: pointer;
 }
 
+.rangers_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*White Sox Styles*/
 
 .white_sox_chart::before {
@@ -369,6 +405,13 @@ h2 {
 .white_sox_inactive:hover {
   fill: #C4CED4; /*Team secondary color*/
   cursor: pointer;
+}
+
+.white_sox_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Indians Styles*/
@@ -430,6 +473,13 @@ h2 {
   cursor: pointer;
 }
 
+.indians_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Tigers Styles*/
 
 .tigers_chart::before {
@@ -487,6 +537,13 @@ h2 {
 .tigers_inactive:hover {
   fill: #FA4616; /*Team secondary color*/
   cursor: pointer;
+}
+
+.tigers_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Royals Styles*/
@@ -548,6 +605,13 @@ h2 {
   cursor: pointer;
 }
 
+.royals_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Twins Styles*/
 
 .twins_chart::before {
@@ -605,6 +669,13 @@ h2 {
 .twins_inactive:hover {
   fill: #D31145; /*Team secondary color*/
   cursor: pointer;
+}
+
+.twins_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Orioles Styles*/
@@ -666,6 +737,13 @@ h2 {
   cursor: pointer;
 }
 
+.orioles_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Red Sox Styles*/
 
 .red_sox_chart::before {
@@ -725,6 +803,13 @@ h2 {
   cursor: pointer;
 }
 
+.red_sox_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Yankees Styles*/
 
 .yankees_chart::before {
@@ -782,6 +867,13 @@ h2 {
 .yankees_inactive:hover {
   fill: #D3D3D3; /*Team secondary color*/
   cursor: pointer;
+}
+
+.yankees_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Rays Styles*/
@@ -844,14 +936,10 @@ h2 {
 }
 
 .rays_title {
-  color: #8FBCE6;
+  font-size: 14px;
   font-weight: bold;
-  font: 160px;
-}
-
-#rays_table tbody td {
-  display: block;
   text-align: center;
+  text-decoration: underline;
 }
 
 /*Blue Jays Styles*/
@@ -880,7 +968,7 @@ h2 {
   width: 180px;
   height: 60px;
   font: 12px sans-serif;
-  color: #1D2D5C; /*Team secondary color*/
+  color: #E8291C; /*Team secondary color*/
   text-align: center;
   background: #134A8E; /*Team primary color*/
   border: 0;
@@ -909,8 +997,15 @@ h2 {
 }
 
 .blue_jays_inactive:hover {
-  fill: #1D2D5C; /*Team secondary color*/
+  fill: #E8291C; /*Team secondary color*/
   cursor: pointer;
+}
+
+.blue_jays_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Diamondbacks Styles*/
@@ -973,6 +1068,13 @@ h2 {
   cursor: pointer;
 }
 
+.diamondbacks_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Rockies Styles*/
 
 .rockies_chart::before {
@@ -1030,6 +1132,13 @@ h2 {
 .rockies_inactive:hover{
   fill: #C4CED4; /*Team secondary color*/
   cursor: pointer;
+}
+
+.rockies_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Dodgers Styles*/
@@ -1091,6 +1200,13 @@ h2 {
   cursor: pointer;
 }
 
+.dodgers_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Padres Styles*/
 
 .padres_chart::before {
@@ -1148,6 +1264,13 @@ h2 {
 .padres_inactive:hover{
   fill: #FFC425; /*Team secondary color*/
   cursor: pointer;
+}
+
+.padres_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Giants Styles*/
@@ -1209,6 +1332,13 @@ h2 {
   cursor: pointer;
 }
 
+.giants_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Cubs Styles*/
 
 .cubs_chart::before {
@@ -1226,6 +1356,7 @@ h2 {
   background-size: cover;
   opacity: 0.5
 }
+
 
 .cubs_tooltip {
   position: absolute;
@@ -1266,6 +1397,13 @@ h2 {
 .cubs_inactive:hover{
   fill: #CC3433; /*Team secondary color*/
   cursor: pointer;
+}
+
+.cubs_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Reds Styles*/
@@ -1327,6 +1465,13 @@ h2 {
   cursor: pointer;
 }
 
+.reds_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Brewers Styles*/
 
 .brewers_chart::before {
@@ -1384,6 +1529,13 @@ h2 {
 .brewers_inactive:hover{
   fill: #B6922E; /*Team secondary color*/
   cursor: pointer;
+}
+
+.brewers_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Pirates Styles*/
@@ -1445,6 +1597,13 @@ h2 {
   cursor: pointer;
 }
 
+.pirates_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Cardinals Styles*/
 
 .cardinals_chart::before {
@@ -1502,6 +1661,13 @@ h2 {
 .cardinals_inactive:hover{
   fill: #FEDB00; /*Team secondary color*/
   cursor: pointer;
+}
+
+.cardinals_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Braves Styles*/
@@ -1563,6 +1729,13 @@ h2 {
   cursor: pointer;
 }
 
+.braves_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Marlins Styles*/
 
 .marlins_chart::before {
@@ -1620,6 +1793,13 @@ h2 {
 .marlins_inactive:hover{
   fill: #000000; /*Team secondary color*/
   cursor: pointer;
+}
+
+.marlins_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*Mets Styles*/
@@ -1681,6 +1861,13 @@ h2 {
   cursor: pointer;
 }
 
+.mets_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Phillies Styles*/
 
 .phillies_chart::before {
@@ -1740,6 +1927,13 @@ h2 {
   cursor: pointer;
 }
 
+.phillies_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
 /*Nationals Styles*/
 
 .nationals_chart::before {
@@ -1797,6 +1991,13 @@ h2 {
 .nationals_inactive:hover{
   fill: #14225A; /*Team secondary color*/
   cursor: pointer;
+}
+
+.nationals_title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
 }
 
 #table-area th {

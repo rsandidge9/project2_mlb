@@ -132,6 +132,9 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
   chartGroup.append("g")
   .attr("transform", `translate(0,${height})`)
   .call(d3.axisBottom(xLinearScale).tickFormat(i => FranchiseTeamData[i].Year).tickSizeOuter(0))
+  .selectAll("text")
+  .attr("text-anchor", "end")
+  .attr("transform", "rotate(-45)")
 
   // append x axis
   var yAxis = chartGroup.append("g")

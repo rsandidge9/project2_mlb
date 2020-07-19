@@ -14,7 +14,7 @@ var height = svgHeight - margin.top - margin.bottom;
 // Create an SVG wrapper, append an SVG group that will hold our chart,
 // and shift the latter by left and top margins.
 var svg = d3
-  .select(".nationals_chart")
+  .select(".rangers_chart")
   .append("svg")
   .attr("width", svgWidth)
   .attr("height", svgHeight);
@@ -75,7 +75,7 @@ function updateToolTip(chosenYAxis, barGroup) {
   }
 
   var toolTip = d3.tip()
-    .attr("class", "nationals_tooltip")
+    .attr("class", "rangers_tooltip")
     .offset([80, -60])
     .html(function (d) {
       return (`${d.Year + " " + d.Current_Franchise}<br>${label} ${d[chosenYAxis]}`);
@@ -99,7 +99,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
   if (err) throw err;
 
   var FranchiseTeamData = teamData.filter(function (d) {
-    if (d["Current_Franchise"] == "Washington Nationals") {
+    if (d["Current_Franchise"] == "Texas Rangers") {
       return d;
     }
   })
@@ -151,7 +151,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("y", d => yLinearScale(d[chosenYAxis]))
     .attr("height", d => height - yLinearScale(d[chosenYAxis]))
     .attr("width", xLinearScale.bandwidth())
-    .classed("nationals_inactive", true)
+    .classed("rangers_inactive", true)
 
   // Create group for two x-axis labels
   var labelsGroup = chartGroup.append("g")
@@ -161,8 +161,8 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("x", width / 2 )
     .attr("y", 20)
     .style("text-anchor", "center")
-    .text("Washington Nationals Draft History by WAR")
-    .classed("nationals_title", true)
+    .text("Texas Rangers Draft History by WAR")
+    .classed("rangers_title", true)
   ;
 
 
@@ -173,7 +173,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("transform", "rotate(-90)")
     .attr("value", "TC_Total_WAR") // value to grab for event listener
     .classed("active", true)
-    .classed("nationals_axis-text", true)
+    .classed("rangers_axis-text", true)
     .text("Team Controlled WAR");
 
 
@@ -183,8 +183,8 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("dy", "1em")
     .attr("transform", "rotate(-90)")
     .attr("value", "Career_Total_WAR") // value to grab for event listener
-    .classed("nationals_inactive", true)
-    .classed("nationals_axis-text", true)
+    .classed("rangers_inactive", true)
+    .classed("rangers_axis-text", true)
     .text("Career WAR");
 
   //append x axis
@@ -192,7 +192,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
     .attr("x", (width / 2))
     .attr("y", 460)
     .attr("value", "Year")
-    .classed("nationals_axis-text", true)
+    .classed("rangers_axis-text", true)
     .text("Year");
 
   // updateToolTip function above csv import
@@ -227,19 +227,19 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
         // changes classes to change bold text
         if (chosenYAxis === "Career_Total_WAR") {
           Career_WAR
-            .classed("nationals_active", true)
-            .classed("nationals_inactive", false);
+            .classed("rangers_active", true)
+            .classed("rangers_inactive", false);
           TC_WAR
-            .classed("nationals_active", false)
-            .classed("nationals_inactive", true);
+            .classed("rangers_active", false)
+            .classed("rangers_inactive", true);
         }
         else {
           Career_WAR
-            .classed("nationals_active", false)
-            .classed("nationals_inactive", true);
+            .classed("rangers_active", false)
+            .classed("rangers_inactive", true);
           TC_WAR
-            .classed("nationals_active", true)
-            .classed("nationals_inactive", false);
+            .classed("rangers_active", true)
+            .classed("rangers_inactive", false);
         }
       }
     });
@@ -254,7 +254,7 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
 d3.csv("data/Draft_SD_CSV.csv").then(function (playerData) {
 
   var FranchisePlayerData = playerData.filter(function (d) {
-    if (d["Current_Franchise"] == "Washington Nationals") {
+    if (d["Current_Franchise"] == "Texas Rangers") {
       return d;
     }
   })
