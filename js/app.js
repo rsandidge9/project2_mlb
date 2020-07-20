@@ -158,13 +158,13 @@ d3.csv("data/Data_Grouped_by_Year_and_Franchise.csv").then(function (teamData, e
   var labelsGroup = chartGroup.append("g")
     .attr("transform", `translate(${width / 2}, ${height})`);
 
-    svg.append("text")
-    .attr("x", width / 2 )
+  svg.append("text")
+    .attr("x", width / 2)
     .attr("y", 20)
     .style("text-anchor", "center")
     .text("Tampa Bay Rays Draft History by WAR")
     .classed("rays_title", true)
-  ;
+    ;
 
 
   var TC_WAR = labelsGroup.append("text")
@@ -306,6 +306,15 @@ d3.csv("data/Draft_SD_CSV.csv").then(function (playerData) {
     }
     )
   };
+
+  // var input = document.getElementById("my-input");
+  d3.csv("data/quotes.csv").then(function (quotes, err) {
+    if (err) throw err;
+    var quote = quotes[Math.floor(Math.random() * quotes.length)].quote;
+    document.getElementById("my-input").innerText = quote;
+    // input.value = quotes[Math.floor(Math.random() * quotes.length)].quote;
+
+  })
 
 }).catch(function (error) {
   console.log(error);
